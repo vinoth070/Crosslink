@@ -1,0 +1,8 @@
+{
+  "name": "Remix Crosslink — Knowledge-Graph RAG",
+  "description": "AI research assistant combining document indexing, entity-relationship knowledge graph extraction, and hybrid semantic/graph multi-hop RAG with grounded citations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

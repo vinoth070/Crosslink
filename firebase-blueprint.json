@@ -1,0 +1,224 @@
+{
+  "entities": {
+    "ResearchDocument": {
+      "title": "ResearchDocument",
+      "description": "Indexed research document metadata in Crosslink",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "maxLength": 128
+        },
+        "name": {
+          "type": "string",
+          "maxLength": 256
+        },
+        "type": {
+          "type": "string",
+          "enum": ["pdf", "txt", "md", "json"]
+        },
+        "size": {
+          "type": "number"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["pending", "chunking", "extracting", "indexed", "error"]
+        },
+        "createdAt": {
+          "type": "string",
+          "maxLength": 64
+        },
+        "chunkCount": {
+          "type": "number"
+        },
+        "entityCount": {
+          "type": "number"
+        },
+        "userId": {
+          "type": "string",
+          "maxLength": 128
+        }
+      },
+      "required": ["id", "name", "type", "size", "status", "createdAt", "userId"]
+    },
+    "ResearchChunk": {
+      "title": "ResearchChunk",
+      "description": "Chunked text excerpt from an indexed research document",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "maxLength": 128
+        },
+        "documentId": {
+          "type": "string",
+          "maxLength": 128
+        },
+        "documentName": {
+          "type": "string",
+          "maxLength": 256
+        },
+        "text": {
+          "type": "string",
+          "maxLength": 10000
+        },
+        "pageOrSection": {
+          "type": "string",
+          "maxLength": 256
+        },
+        "chunkIndex": {
+          "type": "number"
+        },
+        "userId": {
+          "type": "string",
+          "maxLength": 128
+        }
+      },
+      "required": ["id", "documentId", "documentName", "text", "chunkIndex", "userId"]
+    },
+    "KnowledgeEntity": {
+      "title": "KnowledgeEntity",
+      "description": "Extracted knowledge graph node entity",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "maxLength": 128
+        },
+        "name": {
+          "type": "string",
+          "maxLength": 256
+        },
+        "type": {
+          "type": "string",
+          "enum": ["Person", "Organization", "Technology", "Condition", "Location", "Concept", "Product", "ClinicalTrial"]
+        },
+        "description": {
+          "type": "string",
+          "maxLength": 2000
+        },
+        "mentionCount": {
+          "type": "number"
+        },
+        "userId": {
+          "type": "string",
+          "maxLength": 128
+        }
+      },
+      "required": ["id", "name", "type", "mentionCount", "userId"]
+    },
+    "KnowledgeRelationship": {
+      "title": "KnowledgeRelationship",
+      "description": "Extracted typed knowledge graph edge triple connecting two entities",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "maxLength": 128
+        },
+        "sourceEntityId": {
+          "type": "string",
+          "maxLength": 128
+        },
+        "targetEntityId": {
+          "type": "string",
+          "maxLength": 128
+        },
+        "sourceEntityName": {
+          "type": "string",
+          "maxLength": 256
+        },
+        "targetEntityName": {
+          "type": "string",
+          "maxLength": 256
+        },
+        "type": {
+          "type": "string",
+          "maxLength": 100
+        },
+        "snippet": {
+          "type": "string",
+          "maxLength": 2000
+        },
+        "documentId": {
+          "type": "string",
+          "maxLength": 128
+        },
+        "documentName": {
+          "type": "string",
+          "maxLength": 256
+        },
+        "userId": {
+          "type": "string",
+          "maxLength": 128
+        }
+      },
+      "required": ["id", "sourceEntityId", "targetEntityId", "sourceEntityName", "targetEntityName", "type", "snippet", "userId"]
+    },
+    "AssistantConversation": {
+      "title": "AssistantConversation",
+      "description": "Saved Ask Crosslink research dialogue session",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "maxLength": 128
+        },
+        "title": {
+          "type": "string",
+          "maxLength": 256
+        },
+        "userId": {
+          "type": "string",
+          "maxLength": 128
+        },
+        "createdAt": {
+          "type": "string",
+          "maxLength": 64
+        },
+        "updatedAt": {
+          "type": "string",
+          "maxLength": 64
+        }
+      },
+      "required": ["id", "title", "userId", "createdAt", "updatedAt"]
+    },
+    "TestConnection": {
+      "title": "TestConnection",
+      "description": "Connection test document for health checks",
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "maxLength": 64
+        }
+      }
+    }
+  },
+  "firestore": {
+    "/documents/{documentId}": {
+      "schema": "ResearchDocument",
+      "description": "Collection of indexed documents for research assistant"
+    },
+    "/chunks/{chunkId}": {
+      "schema": "ResearchChunk",
+      "description": "Collection of chunked document text segments"
+    },
+    "/entities/{entityId}": {
+      "schema": "KnowledgeEntity",
+      "description": "Collection of extracted knowledge graph nodes"
+    },
+    "/relationships/{relationshipId}": {
+      "schema": "KnowledgeRelationship",
+      "description": "Collection of extracted relationship triples"
+    },
+    "/conversations/{conversationId}": {
+      "schema": "AssistantConversation",
+      "description": "Collection of research chat conversations"
+    },
+    "/test/{testId}": {
+      "schema": "TestConnection",
+      "description": "Connectivity test document"
+    }
+  }
+}

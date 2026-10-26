@@ -1,0 +1,156 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Default deny all access
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Hardened Global Security Primitives
+    function isValidId(id) {
+      return id is string && id.size() > 0 && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+    function incoming() {
+      return request.resource.data;
+    }
+    function existing() {
+      return resource.data;
+    }
+    function isSignedIn() {
+      return request.auth != null;
+    }
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    // Entity-Specific Validation Helpers
+    function isValidDocument(data) {
+      return data.id is string && data.id.size() <= 128 &&
+             data.name is string && data.name.size() > 0 && data.name.size() <= 256 &&
+             data.type is string && (data.type == 'pdf' || data.type == 'txt' || data.type == 'md' || data.type == 'json') &&
+             data.size is number && data.size >= 0 &&
+             data.status is string && (data.status == 'pending' || data.status == 'chunking' || data.status == 'extracting' || data.status == 'indexed' || data.status == 'error') &&
+             data.createdAt is string && data.createdAt.size() <= 64 &&
+             data.userId is string && data.userId == request.auth.uid;
+    }
+
+    function isValidChunk(data) {
+      return data.id is string && data.id.size() <= 128 &&
+             data.documentId is string && data.documentId.size() <= 128 &&
+             data.documentName is string && data.documentName.size() <= 256 &&
+             data.text is string && data.text.size() <= 10000 &&
+             data.chunkIndex is number && data.chunkIndex >= 0 &&
+             data.userId is string && data.userId == request.auth.uid;
+    }
+
+    function isValidEntity(data) {
+      return data.id is string && data.id.size() <= 128 &&
+             data.name is string && data.name.size() > 0 && data.name.size() <= 256 &&
+             data.type is string && (
+               data.type == 'Person' ||
+               data.type == 'Organization' ||
+               data.type == 'Technology' ||
+               data.type == 'Condition' ||
+               data.type == 'Location' ||
+               data.type == 'Concept' ||
+               data.type == 'Product' ||
+               data.type == 'ClinicalTrial'
+             ) &&
+             data.mentionCount is number && data.mentionCount >= 0 &&
+             data.userId is string && data.userId == request.auth.uid;
+    }
+
+    function isValidRelationship(data) {
+      return data.id is string && data.id.size() <= 128 &&
+             data.sourceEntityId is string && data.sourceEntityId.size() <= 128 &&
+             data.targetEntityId is string && data.targetEntityId.size() <= 128 &&
+             data.sourceEntityName is string && data.sourceEntityName.size() <= 256 &&
+             data.targetEntityName is string && data.targetEntityName.size() <= 256 &&
+             data.type is string && data.type.size() <= 100 &&
+             data.snippet is string && data.snippet.size() <= 2000 &&
+             data.userId is string && data.userId == request.auth.uid;
+    }
+
+    function isValidConversation(data) {
+      return data.id is string && data.id.size() <= 128 &&
+             data.title is string && data.title.size() <= 256 &&
+             data.userId is string && data.userId == request.auth.uid &&
+             data.createdAt is string && data.createdAt.size() <= 64 &&
+             data.updatedAt is string && data.updatedAt.size() <= 64;
+    }
+
+    // Match Collection Blocks
+    match /documents/{documentId} {
+      allow get: if isValidId(documentId) && (isOwner(existing().userId) || existing().isDemo == true);
+      allow list: if isSignedIn() && resource.data.userId == request.auth.uid;
+      allow create: if isValidId(documentId) && isSignedIn() &&
+                       incoming().userId == request.auth.uid &&
+                       isValidDocument(incoming());
+      allow update: if isValidId(documentId) && isSignedIn() &&
+                       isOwner(existing().userId) &&
+                       incoming().userId == existing().userId &&
+                       incoming().createdAt == existing().createdAt &&
+                       isValidDocument(incoming());
+      allow delete: if isValidId(documentId) && isSignedIn() && isOwner(existing().userId);
+    }
+
+    match /chunks/{chunkId} {
+      allow get: if isValidId(chunkId) && (isOwner(existing().userId) || existing().isDemo == true);
+      allow list: if isSignedIn() && resource.data.userId == request.auth.uid;
+      allow create: if isValidId(chunkId) && isSignedIn() &&
+                       incoming().userId == request.auth.uid &&
+                       isValidChunk(incoming());
+      allow update: if isValidId(chunkId) && isSignedIn() &&
+                       isOwner(existing().userId) &&
+                       incoming().userId == existing().userId &&
+                       isValidChunk(incoming());
+      allow delete: if isValidId(chunkId) && isSignedIn() && isOwner(existing().userId);
+    }
+
+    match /entities/{entityId} {
+      allow get: if isValidId(entityId) && (isOwner(existing().userId) || existing().isDemo == true);
+      allow list: if isSignedIn() && resource.data.userId == request.auth.uid;
+      allow create: if isValidId(entityId) && isSignedIn() &&
+                       incoming().userId == request.auth.uid &&
+                       isValidEntity(incoming());
+      allow update: if isValidId(entityId) && isSignedIn() &&
+                       isOwner(existing().userId) &&
+                       incoming().userId == existing().userId &&
+                       isValidEntity(incoming());
+      allow delete: if isValidId(entityId) && isSignedIn() && isOwner(existing().userId);
+    }
+
+    match /relationships/{relationshipId} {
+      allow get: if isValidId(relationshipId) && (isOwner(existing().userId) || existing().isDemo == true);
+      allow list: if isSignedIn() && resource.data.userId == request.auth.uid;
+      allow create: if isValidId(relationshipId) && isSignedIn() &&
+                       incoming().userId == request.auth.uid &&
+                       isValidRelationship(incoming());
+      allow update: if isValidId(relationshipId) && isSignedIn() &&
+                       isOwner(existing().userId) &&
+                       incoming().userId == existing().userId &&
+                       isValidRelationship(incoming());
+      allow delete: if isValidId(relationshipId) && isSignedIn() && isOwner(existing().userId);
+    }
+
+    match /conversations/{conversationId} {
+      allow get: if isValidId(conversationId) && isOwner(existing().userId);
+      allow list: if isSignedIn() && resource.data.userId == request.auth.uid;
+      allow create: if isValidId(conversationId) && isSignedIn() &&
+                       incoming().userId == request.auth.uid &&
+                       isValidConversation(incoming());
+      allow update: if isValidId(conversationId) && isSignedIn() &&
+                       isOwner(existing().userId) &&
+                       incoming().userId == existing().userId &&
+                       isValidConversation(incoming());
+      allow delete: if isValidId(conversationId) && isSignedIn() && isOwner(existing().userId);
+    }
+
+    // Health check connection test document path
+    match /test/{testId} {
+      allow get: if isValidId(testId);
+      allow write: if false;
+    }
+  }
+}

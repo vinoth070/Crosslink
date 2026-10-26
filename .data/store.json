@@ -1,0 +1,2860 @@
+{
+  "documents": [
+    {
+      "id": "demo-doc-1",
+      "name": "ApexBio_Corporate_Overview.md",
+      "type": "md",
+      "size": 1420,
+      "status": "indexed",
+      "createdAt": "2025-06-12T10:00:00Z",
+      "chunkCount": 2,
+      "entityCount": 6,
+      "isDemo": true
+    },
+    {
+      "id": "demo-doc-2",
+      "name": "Vance_CerebroSync_AI_Whitepaper.txt",
+      "type": "txt",
+      "size": 1890,
+      "status": "indexed",
+      "createdAt": "2025-07-01T14:30:00Z",
+      "chunkCount": 2,
+      "entityCount": 5,
+      "isDemo": true
+    },
+    {
+      "id": "demo-doc-3",
+      "name": "StJude_Clinical_Trial_Protocol_NCT09428.md",
+      "type": "md",
+      "size": 1750,
+      "status": "indexed",
+      "createdAt": "2025-10-18T09:15:00Z",
+      "chunkCount": 2,
+      "entityCount": 7,
+      "isDemo": true
+    }
+  ],
+  "chunks": [
+    {
+      "id": "demo-c1",
+      "documentId": "demo-doc-1",
+      "documentName": "ApexBio_Corporate_Overview.md",
+      "pageOrSection": "Section 1: Corporate Origins & Leadership",
+      "chunkIndex": 0,
+      "text": "ApexBio Dynamics is an advanced biotechnology and neuro-engineering company headquartered in Boston, Massachusetts. Founded in 2018 by bioengineer Dr. Arthur Pendelton, the company recruited Dr. Elena Vance in November 2021 as Chief AI Neuroscientist to lead the Autonomous Neural Systems Division.",
+      "entityIds": [
+        "e-apexbio",
+        "e-vance",
+        "e-boston",
+        "e-pendelton"
+      ],
+      "isDemo": true
+    },
+    {
+      "id": "demo-c2",
+      "documentId": "demo-doc-1",
+      "documentName": "ApexBio_Corporate_Overview.md",
+      "pageOrSection": "Section 2: NeuroPlex Bridge & Clinical Partnerships",
+      "chunkIndex": 1,
+      "text": "ApexBio's hardware flagship is the NeuroPlex Bridge, a high-density micro-electrode array implant designed for bio-compatible deep brain interface. In June 2024, ApexBio Dynamics established a formal clinical research partnership with St. Jude Neurological Institute to evaluate invasive AI-driven neural modulation protocols in human subjects.",
+      "entityIds": [
+        "e-apexbio",
+        "e-neuroplex",
+        "e-stjude"
+      ],
+      "isDemo": true
+    },
+    {
+      "id": "demo-c3",
+      "documentId": "demo-doc-2",
+      "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+      "pageOrSection": "Section 1: CerebroSync AI Architecture",
+      "chunkIndex": 0,
+      "text": "Dr. Elena Vance developed CerebroSync AI, an edge-computed deep reinforcement learning framework that interfaces directly with the NeuroPlex Bridge. CerebroSync AI processes multi-channel local field potentials from the subthalamic nucleus and predicts pathological oscillatory tremor synchronization 120ms before onset.",
+      "entityIds": [
+        "e-vance",
+        "e-cerebrosync",
+        "e-neuroplex"
+      ],
+      "isDemo": true
+    },
+    {
+      "id": "demo-c4",
+      "documentId": "demo-doc-2",
+      "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+      "pageOrSection": "Section 2: Therapeutic Targets",
+      "chunkIndex": 1,
+      "text": "The primary therapeutic target of CerebroSync AI is Refractory Parkinson's Disease in patients who no longer respond effectively to levodopa therapy. In pre-clinical trials, CerebroSync AI demonstrated an 84% reduction in off-target involuntary movements.",
+      "entityIds": [
+        "e-cerebrosync",
+        "e-parkinsons"
+      ],
+      "isDemo": true
+    },
+    {
+      "id": "demo-c5",
+      "documentId": "demo-doc-3",
+      "documentName": "StJude_Clinical_Trial_Protocol_NCT09428.md",
+      "pageOrSection": "Section 1: Protocol & Leadership",
+      "chunkIndex": 0,
+      "text": "Clinical Trial NCT-09428 is sponsored by ApexBio Dynamics and conducted at St. Jude Neurological Institute in Chicago. Dr. Marcus Thorne, Chief of Clinical Neurology at St. Jude, serves as Principal Investigator, supervising surgical implantation and patient telemetry.",
+      "entityIds": [
+        "e-nct09428",
+        "e-apexbio",
+        "e-stjude",
+        "e-thorne"
+      ],
+      "isDemo": true
+    },
+    {
+      "id": "demo-c6",
+      "documentId": "demo-doc-3",
+      "documentName": "StJude_Clinical_Trial_Protocol_NCT09428.md",
+      "pageOrSection": "Section 2: Clinical Scope & FDA Designation",
+      "chunkIndex": 1,
+      "text": "Trial NCT-09428 evaluates the CerebroSync AI neuromodulation system embedded within the NeuroPlex Bridge for treating Refractory Parkinson's Disease. In October 2025, the U.S. FDA granted Breakthrough Device Designation to the integrated CerebroSync AI and NeuroPlex system.",
+      "entityIds": [
+        "e-nct09428",
+        "e-cerebrosync",
+        "e-neuroplex",
+        "e-parkinsons",
+        "e-fda"
+      ],
+      "isDemo": true
+    }
+  ],
+  "entities": [
+    {
+      "id": "e-apexbio",
+      "name": "ApexBio Dynamics",
+      "type": "Organization",
+      "description": "Biotechnology and neuro-engineering company headquartered in Boston, MA.",
+      "mentionCount": 4,
+      "chunkIds": [
+        "demo-c1",
+        "demo-c2",
+        "demo-c5"
+      ],
+      "isDemo": true
+    },
+    {
+      "id": "e-vance",
+      "name": "Dr. Elena Vance",
+      "type": "Person",
+      "description": "Chief AI Neuroscientist at ApexBio Dynamics and creator of CerebroSync AI.",
+      "mentionCount": 3,
+      "chunkIds": [
+        "demo-c1",
+        "demo-c3"
+      ],
+      "isDemo": true
+    },
+    {
+      "id": "e-boston",
+      "name": "Boston, Massachusetts",
+      "type": "Location",
+      "description": "Headquarters city of ApexBio Dynamics.",
+      "mentionCount": 1,
+      "chunkIds": [
+        "demo-c1"
+      ],
+      "isDemo": true
+    },
+    {
+      "id": "e-pendelton",
+      "name": "Dr. Arthur Pendelton",
+      "type": "Person",
+      "description": "Bioengineer and founder of ApexBio Dynamics (2018).",
+      "mentionCount": 1,
+      "chunkIds": [
+        "demo-c1"
+      ],
+      "isDemo": true
+    },
+    {
+      "id": "e-neuroplex",
+      "name": "NeuroPlex Bridge",
+      "type": "Technology",
+      "description": "High-density micro-electrode array hardware implant for deep brain interface.",
+      "mentionCount": 4,
+      "chunkIds": [
+        "demo-c2",
+        "demo-c3",
+        "demo-c6"
+      ],
+      "isDemo": true
+    },
+    {
+      "id": "e-stjude",
+      "name": "St. Jude Neurological Institute",
+      "type": "Organization",
+      "description": "Clinical hospital and research institute in Chicago partnering with ApexBio.",
+      "mentionCount": 3,
+      "chunkIds": [
+        "demo-c2",
+        "demo-c5"
+      ],
+      "isDemo": true
+    },
+    {
+      "id": "e-cerebrosync",
+      "name": "CerebroSync AI",
+      "type": "Product",
+      "description": "Closed-loop deep reinforcement learning algorithm for adaptive tremor modulation.",
+      "mentionCount": 4,
+      "chunkIds": [
+        "demo-c3",
+        "demo-c4",
+        "demo-c6"
+      ],
+      "isDemo": true
+    },
+    {
+      "id": "e-parkinsons",
+      "name": "Refractory Parkinson's Disease",
+      "type": "Condition",
+      "description": "Drug-resistant neurodegenerative condition targeted by CerebroSync AI.",
+      "mentionCount": 2,
+      "chunkIds": [
+        "demo-c4",
+        "demo-c6"
+      ],
+      "isDemo": true
+    },
+    {
+      "id": "e-thorne",
+      "name": "Dr. Marcus Thorne",
+      "type": "Person",
+      "description": "Chief of Clinical Neurology at St. Jude Neurological Institute and PI of NCT-09428.",
+      "mentionCount": 2,
+      "chunkIds": [
+        "demo-c5"
+      ],
+      "isDemo": true
+    },
+    {
+      "id": "e-nct09428",
+      "name": "Trial NCT-09428",
+      "type": "ClinicalTrial",
+      "description": "Phase II clinical trial evaluating CerebroSync AI on the NeuroPlex Bridge.",
+      "mentionCount": 3,
+      "chunkIds": [
+        "demo-c5",
+        "demo-c6"
+      ],
+      "isDemo": true
+    },
+    {
+      "id": "e-fda",
+      "name": "U.S. FDA",
+      "type": "Organization",
+      "description": "Regulatory agency granting Breakthrough Device Designation to CerebroSync AI.",
+      "mentionCount": 1,
+      "chunkIds": [
+        "demo-c6"
+      ],
+      "isDemo": true
+    }
+  ],
+  "relationships": [
+    {
+      "id": "rel-1",
+      "sourceEntityId": "e-apexbio",
+      "targetEntityId": "e-boston",
+      "sourceEntityName": "ApexBio Dynamics",
+      "targetEntityName": "Boston, Massachusetts",
+      "type": "LOCATED_IN",
+      "description": "ApexBio Dynamics is headquartered in Boston, Massachusetts.",
+      "sourceChunkId": "demo-c1",
+      "documentId": "demo-doc-1",
+      "documentName": "ApexBio_Corporate_Overview.md",
+      "snippet": "ApexBio Dynamics is an advanced biotechnology and neuro-engineering company headquartered in Boston, Massachusetts.",
+      "isDemo": true
+    },
+    {
+      "id": "rel-2",
+      "sourceEntityId": "e-pendelton",
+      "targetEntityId": "e-apexbio",
+      "sourceEntityName": "Dr. Arthur Pendelton",
+      "targetEntityName": "ApexBio Dynamics",
+      "type": "FOUNDED",
+      "description": "Dr. Arthur Pendelton founded ApexBio Dynamics in 2018.",
+      "sourceChunkId": "demo-c1",
+      "documentId": "demo-doc-1",
+      "documentName": "ApexBio_Corporate_Overview.md",
+      "snippet": "Founded in 2018 by bioengineer Dr. Arthur Pendelton...",
+      "isDemo": true
+    },
+    {
+      "id": "rel-3",
+      "sourceEntityId": "e-vance",
+      "targetEntityId": "e-apexbio",
+      "sourceEntityName": "Dr. Elena Vance",
+      "targetEntityName": "ApexBio Dynamics",
+      "type": "EMPLOYED_BY",
+      "description": "Dr. Elena Vance serves as Chief AI Neuroscientist leading Autonomous Neural Systems.",
+      "sourceChunkId": "demo-c1",
+      "documentId": "demo-doc-1",
+      "documentName": "ApexBio_Corporate_Overview.md",
+      "snippet": "...recruited Dr. Elena Vance in November 2021 as Chief AI Neuroscientist to lead the Autonomous Neural Systems Division.",
+      "isDemo": true
+    },
+    {
+      "id": "rel-4",
+      "sourceEntityId": "e-apexbio",
+      "targetEntityId": "e-neuroplex",
+      "sourceEntityName": "ApexBio Dynamics",
+      "targetEntityName": "NeuroPlex Bridge",
+      "type": "MANUFACTURES",
+      "description": "NeuroPlex Bridge is the proprietary hardware flagship developed by ApexBio.",
+      "sourceChunkId": "demo-c2",
+      "documentId": "demo-doc-1",
+      "documentName": "ApexBio_Corporate_Overview.md",
+      "snippet": "ApexBio's hardware flagship is the NeuroPlex Bridge, a high-density micro-electrode array implant...",
+      "isDemo": true
+    },
+    {
+      "id": "rel-5",
+      "sourceEntityId": "e-apexbio",
+      "targetEntityId": "e-stjude",
+      "sourceEntityName": "ApexBio Dynamics",
+      "targetEntityName": "St. Jude Neurological Institute",
+      "type": "PARTNERED_WITH",
+      "description": "ApexBio established a formal clinical research partnership with St. Jude.",
+      "sourceChunkId": "demo-c2",
+      "documentId": "demo-doc-1",
+      "documentName": "ApexBio_Corporate_Overview.md",
+      "snippet": "ApexBio Dynamics established a formal clinical research partnership with St. Jude Neurological Institute...",
+      "isDemo": true
+    },
+    {
+      "id": "rel-6",
+      "sourceEntityId": "e-vance",
+      "targetEntityId": "e-cerebrosync",
+      "sourceEntityName": "Dr. Elena Vance",
+      "targetEntityName": "CerebroSync AI",
+      "type": "DEVELOPED",
+      "description": "Dr. Elena Vance developed CerebroSync AI reinforcement learning model.",
+      "sourceChunkId": "demo-c3",
+      "documentId": "demo-doc-2",
+      "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+      "snippet": "Dr. Elena Vance developed CerebroSync AI, an edge-computed deep reinforcement learning framework...",
+      "isDemo": true
+    },
+    {
+      "id": "rel-7",
+      "sourceEntityId": "e-cerebrosync",
+      "targetEntityId": "e-neuroplex",
+      "sourceEntityName": "CerebroSync AI",
+      "targetEntityName": "NeuroPlex Bridge",
+      "type": "DEPLOYED_ON",
+      "description": "CerebroSync AI runs on and interfaces directly with the NeuroPlex Bridge implant.",
+      "sourceChunkId": "demo-c3",
+      "documentId": "demo-doc-2",
+      "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+      "snippet": "...interfaces directly with the NeuroPlex Bridge.",
+      "isDemo": true
+    },
+    {
+      "id": "rel-8",
+      "sourceEntityId": "e-cerebrosync",
+      "targetEntityId": "e-parkinsons",
+      "sourceEntityName": "CerebroSync AI",
+      "targetEntityName": "Refractory Parkinson's Disease",
+      "type": "TREATS",
+      "description": "CerebroSync AI targets suppression of tremors in Refractory Parkinson's.",
+      "sourceChunkId": "demo-c4",
+      "documentId": "demo-doc-2",
+      "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+      "snippet": "The primary therapeutic target of CerebroSync AI is Refractory Parkinson's Disease in patients who no longer respond effectively to levodopa therapy.",
+      "isDemo": true
+    },
+    {
+      "id": "rel-9",
+      "sourceEntityId": "e-thorne",
+      "targetEntityId": "e-stjude",
+      "sourceEntityName": "Dr. Marcus Thorne",
+      "targetEntityName": "St. Jude Neurological Institute",
+      "type": "AFFILIATED_WITH",
+      "description": "Dr. Marcus Thorne is Chief of Clinical Neurology at St. Jude.",
+      "sourceChunkId": "demo-c5",
+      "documentId": "demo-doc-3",
+      "documentName": "StJude_Clinical_Trial_Protocol_NCT09428.md",
+      "snippet": "Dr. Marcus Thorne, Chief of Clinical Neurology at St. Jude, serves as Principal Investigator...",
+      "isDemo": true
+    },
+    {
+      "id": "rel-10",
+      "sourceEntityId": "e-thorne",
+      "targetEntityId": "e-nct09428",
+      "sourceEntityName": "Dr. Marcus Thorne",
+      "targetEntityName": "Trial NCT-09428",
+      "type": "DIRECTS",
+      "description": "Dr. Marcus Thorne serves as Principal Investigator for Trial NCT-09428.",
+      "sourceChunkId": "demo-c5",
+      "documentId": "demo-doc-3",
+      "documentName": "StJude_Clinical_Trial_Protocol_NCT09428.md",
+      "snippet": "Dr. Marcus Thorne... serves as Principal Investigator, supervising surgical implantation and patient telemetry.",
+      "isDemo": true
+    },
+    {
+      "id": "rel-11",
+      "sourceEntityId": "e-nct09428",
+      "targetEntityId": "e-cerebrosync",
+      "sourceEntityName": "Trial NCT-09428",
+      "targetEntityName": "CerebroSync AI",
+      "type": "EVALUATES",
+      "description": "Trial NCT-09428 evaluates the clinical efficacy of CerebroSync AI in human subjects.",
+      "sourceChunkId": "demo-c6",
+      "documentId": "demo-doc-3",
+      "documentName": "StJude_Clinical_Trial_Protocol_NCT09428.md",
+      "snippet": "Trial NCT-09428 evaluates the CerebroSync AI neuromodulation system embedded within the NeuroPlex Bridge...",
+      "isDemo": true
+    },
+    {
+      "id": "rel-12",
+      "sourceEntityId": "e-fda",
+      "targetEntityId": "e-cerebrosync",
+      "sourceEntityName": "U.S. FDA",
+      "targetEntityName": "CerebroSync AI",
+      "type": "GRANTED_DESIGNATION",
+      "description": "FDA granted Breakthrough Device Designation to the integrated CerebroSync AI system.",
+      "sourceChunkId": "demo-c6",
+      "documentId": "demo-doc-3",
+      "documentName": "StJude_Clinical_Trial_Protocol_NCT09428.md",
+      "snippet": "In October 2025, the U.S. FDA granted Breakthrough Device Designation to the integrated CerebroSync AI and NeuroPlex system.",
+      "isDemo": true
+    }
+  ],
+  "queryLog": [],
+  "settings": {
+    "retrievalMode": "hybrid",
+    "topKChunks": 4,
+    "graphMaxHops": 2,
+    "minSimilarityScore": 0.15,
+    "chunkSize": 450,
+    "chunkOverlap": 50,
+    "modelName": "gemini-3.5-flash-lite",
+    "embeddingModel": "gemini-embedding-2"
+  },
+  "conversations": [
+    {
+      "id": "conv-1793009453519-ci13",
+      "title": "Explain the relationship between Dr. Elena Vance...",
+      "messages": [
+        {
+          "id": "usr-1793009453519",
+          "sender": "user",
+          "text": "Explain the relationship between Dr. Elena Vance and CerebroSync AI.",
+          "timestamp": "2026-10-26T10:10:53.519Z",
+          "actionType": "ask",
+          "scopeUsed": {
+            "type": "all"
+          }
+        },
+        {
+          "id": "msg-1793009453519",
+          "sender": "assistant",
+          "text": "Based on the retrieved knowledge graph relationships and document evidence, the relationship between Dr. Elena Vance and CerebroSync AI is as follows:\n\n* **Direct Development:** Dr. Elena Vance developed **CerebroSync AI**, which is an edge-computed deep reinforcement learning framework that interfaces directly with the NeuroPlex Bridge [Vance_CerebroSync_AI_Whitepaper.txt: Section 1].\n* **Institutional Context (Multi-hop Reasoning Path):** \n  1. Dr. Elena Vance is employed by **ApexBio Dynamics** as Chief AI Neuroscientist, where she leads the Autonomous Neural Systems Division [ApexBio_Corporate_Overview.md: Section 1].\n  2. ApexBio Dynamics manufactures the **NeuroPlex Bridge** [ApexBio_Corporate_Overview.md: Section 2].\n  3. Dr. Vance's framework, **CerebroSync AI**, is deployed on and interfaces directly with this NeuroPlex Bridge hardware to target conditions like Refractory Parkinson's Disease [Vance_CerebroSync_AI_Whitepaper.txt: Section 1 & Section 2].",
+          "timestamp": "2026-10-26T10:10:53.519Z",
+          "actionType": "ask",
+          "ragResponse": {
+            "id": "query-1793009453519",
+            "question": "Explain the relationship between Dr. Elena Vance and CerebroSync AI.",
+            "answer": "Based on the retrieved knowledge graph relationships and document evidence, the relationship between Dr. Elena Vance and CerebroSync AI is as follows:\n\n* **Direct Development:** Dr. Elena Vance developed **CerebroSync AI**, which is an edge-computed deep reinforcement learning framework that interfaces directly with the NeuroPlex Bridge [Vance_CerebroSync_AI_Whitepaper.txt: Section 1].\n* **Institutional Context (Multi-hop Reasoning Path):** \n  1. Dr. Elena Vance is employed by **ApexBio Dynamics** as Chief AI Neuroscientist, where she leads the Autonomous Neural Systems Division [ApexBio_Corporate_Overview.md: Section 1].\n  2. ApexBio Dynamics manufactures the **NeuroPlex Bridge** [ApexBio_Corporate_Overview.md: Section 2].\n  3. Dr. Vance's framework, **CerebroSync AI**, is deployed on and interfaces directly with this NeuroPlex Bridge hardware to target conditions like Refractory Parkinson's Disease [Vance_CerebroSync_AI_Whitepaper.txt: Section 1 & Section 2].",
+            "citations": [
+              {
+                "documentId": "demo-doc-2",
+                "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+                "chunkId": "demo-c3",
+                "pageOrSection": "Section 1: CerebroSync AI Architecture",
+                "snippet": "Dr. Elena Vance developed CerebroSync AI, an edge-computed deep reinforcement learning framework that interfaces directly with the NeuroPlex Bridge. CerebroSync AI processes multi-...",
+                "relevanceScore": 0.82,
+                "isDemo": true
+              },
+              {
+                "documentId": "demo-doc-3",
+                "documentName": "StJude_Clinical_Trial_Protocol_NCT09428.md",
+                "chunkId": "demo-c6",
+                "pageOrSection": "Section 2: Clinical Scope & FDA Designation",
+                "snippet": "Trial NCT-09428 evaluates the CerebroSync AI neuromodulation system embedded within the NeuroPlex Bridge for treating Refractory Parkinson's Disease. In October 2025, the U.S. FDA ...",
+                "relevanceScore": 0.694,
+                "isDemo": true
+              },
+              {
+                "documentId": "demo-doc-1",
+                "documentName": "ApexBio_Corporate_Overview.md",
+                "chunkId": "demo-c1",
+                "pageOrSection": "Section 1: Corporate Origins & Leadership",
+                "snippet": "ApexBio Dynamics is an advanced biotechnology and neuro-engineering company headquartered in Boston, Massachusetts. Founded in 2018 by bioengineer Dr. Arthur Pendelton, the company...",
+                "relevanceScore": 0.6930000000000001,
+                "isDemo": true
+              },
+              {
+                "documentId": "demo-doc-2",
+                "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+                "chunkId": "demo-c4",
+                "pageOrSection": "Section 2: Therapeutic Targets",
+                "snippet": "The primary therapeutic target of CerebroSync AI is Refractory Parkinson's Disease in patients who no longer respond effectively to levodopa therapy. In pre-clinical trials, Cerebr...",
+                "relevanceScore": 0.525,
+                "isDemo": true
+              }
+            ],
+            "graphPaths": [
+              {
+                "nodes": [
+                  {
+                    "id": "e-vance",
+                    "name": "Dr. Elena Vance",
+                    "type": "Person"
+                  },
+                  {
+                    "id": "e-cerebrosync",
+                    "name": "CerebroSync AI",
+                    "type": "Product"
+                  }
+                ],
+                "edges": [
+                  {
+                    "source": "Dr. Elena Vance",
+                    "target": "CerebroSync AI",
+                    "type": "DEVELOPED"
+                  }
+                ],
+                "description": "Dr. Elena Vance -> [DEVELOPED] -> CerebroSync AI"
+              }
+            ],
+            "retrievedChunks": [
+              {
+                "chunk": {
+                  "id": "demo-c3",
+                  "documentId": "demo-doc-2",
+                  "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+                  "pageOrSection": "Section 1: CerebroSync AI Architecture",
+                  "chunkIndex": 0,
+                  "text": "Dr. Elena Vance developed CerebroSync AI, an edge-computed deep reinforcement learning framework that interfaces directly with the NeuroPlex Bridge. CerebroSync AI processes multi-channel local field potentials from the subthalamic nucleus and predicts pathological oscillatory tremor synchronization 120ms before onset.",
+                  "entityIds": [
+                    "e-vance",
+                    "e-cerebrosync",
+                    "e-neuroplex"
+                  ],
+                  "isDemo": true
+                },
+                "score": 0.82
+              },
+              {
+                "chunk": {
+                  "id": "demo-c6",
+                  "documentId": "demo-doc-3",
+                  "documentName": "StJude_Clinical_Trial_Protocol_NCT09428.md",
+                  "pageOrSection": "Section 2: Clinical Scope & FDA Designation",
+                  "chunkIndex": 1,
+                  "text": "Trial NCT-09428 evaluates the CerebroSync AI neuromodulation system embedded within the NeuroPlex Bridge for treating Refractory Parkinson's Disease. In October 2025, the U.S. FDA granted Breakthrough Device Designation to the integrated CerebroSync AI and NeuroPlex system.",
+                  "entityIds": [
+                    "e-nct09428",
+                    "e-cerebrosync",
+                    "e-neuroplex",
+                    "e-parkinsons",
+                    "e-fda"
+                  ],
+                  "isDemo": true
+                },
+                "score": 0.694
+              },
+              {
+                "chunk": {
+                  "id": "demo-c1",
+                  "documentId": "demo-doc-1",
+                  "documentName": "ApexBio_Corporate_Overview.md",
+                  "pageOrSection": "Section 1: Corporate Origins & Leadership",
+                  "chunkIndex": 0,
+                  "text": "ApexBio Dynamics is an advanced biotechnology and neuro-engineering company headquartered in Boston, Massachusetts. Founded in 2018 by bioengineer Dr. Arthur Pendelton, the company recruited Dr. Elena Vance in November 2021 as Chief AI Neuroscientist to lead the Autonomous Neural Systems Division.",
+                  "entityIds": [
+                    "e-apexbio",
+                    "e-vance",
+                    "e-boston",
+                    "e-pendelton"
+                  ],
+                  "isDemo": true
+                },
+                "score": 0.6930000000000001
+              },
+              {
+                "chunk": {
+                  "id": "demo-c4",
+                  "documentId": "demo-doc-2",
+                  "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+                  "pageOrSection": "Section 2: Therapeutic Targets",
+                  "chunkIndex": 1,
+                  "text": "The primary therapeutic target of CerebroSync AI is Refractory Parkinson's Disease in patients who no longer respond effectively to levodopa therapy. In pre-clinical trials, CerebroSync AI demonstrated an 84% reduction in off-target involuntary movements.",
+                  "entityIds": [
+                    "e-cerebrosync",
+                    "e-parkinsons"
+                  ],
+                  "isDemo": true
+                },
+                "score": 0.525
+              }
+            ],
+            "matchedEntities": [
+              {
+                "id": "e-vance",
+                "name": "Dr. Elena Vance",
+                "type": "Person",
+                "description": "Chief AI Neuroscientist at ApexBio Dynamics and creator of CerebroSync AI.",
+                "mentionCount": 3,
+                "chunkIds": [
+                  "demo-c1",
+                  "demo-c3"
+                ],
+                "isDemo": true
+              },
+              {
+                "id": "e-pendelton",
+                "name": "Dr. Arthur Pendelton",
+                "type": "Person",
+                "description": "Bioengineer and founder of ApexBio Dynamics (2018).",
+                "mentionCount": 1,
+                "chunkIds": [
+                  "demo-c1"
+                ],
+                "isDemo": true
+              },
+              {
+                "id": "e-cerebrosync",
+                "name": "CerebroSync AI",
+                "type": "Product",
+                "description": "Closed-loop deep reinforcement learning algorithm for adaptive tremor modulation.",
+                "mentionCount": 4,
+                "chunkIds": [
+                  "demo-c3",
+                  "demo-c4",
+                  "demo-c6"
+                ],
+                "isDemo": true
+              },
+              {
+                "id": "e-thorne",
+                "name": "Dr. Marcus Thorne",
+                "type": "Person",
+                "description": "Chief of Clinical Neurology at St. Jude Neurological Institute and PI of NCT-09428.",
+                "mentionCount": 2,
+                "chunkIds": [
+                  "demo-c5"
+                ],
+                "isDemo": true
+              }
+            ],
+            "traversedRelationships": [
+              {
+                "id": "rel-3",
+                "sourceEntityId": "e-vance",
+                "targetEntityId": "e-apexbio",
+                "sourceEntityName": "Dr. Elena Vance",
+                "targetEntityName": "ApexBio Dynamics",
+                "type": "EMPLOYED_BY",
+                "description": "Dr. Elena Vance serves as Chief AI Neuroscientist leading Autonomous Neural Systems.",
+                "sourceChunkId": "demo-c1",
+                "documentId": "demo-doc-1",
+                "documentName": "ApexBio_Corporate_Overview.md",
+                "snippet": "...recruited Dr. Elena Vance in November 2021 as Chief AI Neuroscientist to lead the Autonomous Neural Systems Division.",
+                "isDemo": true
+              },
+              {
+                "id": "rel-6",
+                "sourceEntityId": "e-vance",
+                "targetEntityId": "e-cerebrosync",
+                "sourceEntityName": "Dr. Elena Vance",
+                "targetEntityName": "CerebroSync AI",
+                "type": "DEVELOPED",
+                "description": "Dr. Elena Vance developed CerebroSync AI reinforcement learning model.",
+                "sourceChunkId": "demo-c3",
+                "documentId": "demo-doc-2",
+                "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+                "snippet": "Dr. Elena Vance developed CerebroSync AI, an edge-computed deep reinforcement learning framework...",
+                "isDemo": true
+              },
+              {
+                "id": "rel-2",
+                "sourceEntityId": "e-pendelton",
+                "targetEntityId": "e-apexbio",
+                "sourceEntityName": "Dr. Arthur Pendelton",
+                "targetEntityName": "ApexBio Dynamics",
+                "type": "FOUNDED",
+                "description": "Dr. Arthur Pendelton founded ApexBio Dynamics in 2018.",
+                "sourceChunkId": "demo-c1",
+                "documentId": "demo-doc-1",
+                "documentName": "ApexBio_Corporate_Overview.md",
+                "snippet": "Founded in 2018 by bioengineer Dr. Arthur Pendelton...",
+                "isDemo": true
+              },
+              {
+                "id": "rel-7",
+                "sourceEntityId": "e-cerebrosync",
+                "targetEntityId": "e-neuroplex",
+                "sourceEntityName": "CerebroSync AI",
+                "targetEntityName": "NeuroPlex Bridge",
+                "type": "DEPLOYED_ON",
+                "description": "CerebroSync AI runs on and interfaces directly with the NeuroPlex Bridge implant.",
+                "sourceChunkId": "demo-c3",
+                "documentId": "demo-doc-2",
+                "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+                "snippet": "...interfaces directly with the NeuroPlex Bridge.",
+                "isDemo": true
+              },
+              {
+                "id": "rel-8",
+                "sourceEntityId": "e-cerebrosync",
+                "targetEntityId": "e-parkinsons",
+                "sourceEntityName": "CerebroSync AI",
+                "targetEntityName": "Refractory Parkinson's Disease",
+                "type": "TREATS",
+                "description": "CerebroSync AI targets suppression of tremors in Refractory Parkinson's.",
+                "sourceChunkId": "demo-c4",
+                "documentId": "demo-doc-2",
+                "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+                "snippet": "The primary therapeutic target of CerebroSync AI is Refractory Parkinson's Disease in patients who no longer respond effectively to levodopa therapy.",
+                "isDemo": true
+              },
+              {
+                "id": "rel-11",
+                "sourceEntityId": "e-nct09428",
+                "targetEntityId": "e-cerebrosync",
+                "sourceEntityName": "Trial NCT-09428",
+                "targetEntityName": "CerebroSync AI",
+                "type": "EVALUATES",
+                "description": "Trial NCT-09428 evaluates the clinical efficacy of CerebroSync AI in human subjects.",
+                "sourceChunkId": "demo-c6",
+                "documentId": "demo-doc-3",
+                "documentName": "StJude_Clinical_Trial_Protocol_NCT09428.md",
+                "snippet": "Trial NCT-09428 evaluates the CerebroSync AI neuromodulation system embedded within the NeuroPlex Bridge...",
+                "isDemo": true
+              },
+              {
+                "id": "rel-12",
+                "sourceEntityId": "e-fda",
+                "targetEntityId": "e-cerebrosync",
+                "sourceEntityName": "U.S. FDA",
+                "targetEntityName": "CerebroSync AI",
+                "type": "GRANTED_DESIGNATION",
+                "description": "FDA granted Breakthrough Device Designation to the integrated CerebroSync AI system.",
+                "sourceChunkId": "demo-c6",
+                "documentId": "demo-doc-3",
+                "documentName": "StJude_Clinical_Trial_Protocol_NCT09428.md",
+                "snippet": "In October 2025, the U.S. FDA granted Breakthrough Device Designation to the integrated CerebroSync AI and NeuroPlex system.",
+                "isDemo": true
+              },
+              {
+                "id": "rel-9",
+                "sourceEntityId": "e-thorne",
+                "targetEntityId": "e-stjude",
+                "sourceEntityName": "Dr. Marcus Thorne",
+                "targetEntityName": "St. Jude Neurological Institute",
+                "type": "AFFILIATED_WITH",
+                "description": "Dr. Marcus Thorne is Chief of Clinical Neurology at St. Jude.",
+                "sourceChunkId": "demo-c5",
+                "documentId": "demo-doc-3",
+                "documentName": "StJude_Clinical_Trial_Protocol_NCT09428.md",
+                "snippet": "Dr. Marcus Thorne, Chief of Clinical Neurology at St. Jude, serves as Principal Investigator...",
+                "isDemo": true
+              },
+              {
+                "id": "rel-10",
+                "sourceEntityId": "e-thorne",
+                "targetEntityId": "e-nct09428",
+                "sourceEntityName": "Dr. Marcus Thorne",
+                "targetEntityName": "Trial NCT-09428",
+                "type": "DIRECTS",
+                "description": "Dr. Marcus Thorne serves as Principal Investigator for Trial NCT-09428.",
+                "sourceChunkId": "demo-c5",
+                "documentId": "demo-doc-3",
+                "documentName": "StJude_Clinical_Trial_Protocol_NCT09428.md",
+                "snippet": "Dr. Marcus Thorne... serves as Principal Investigator, supervising surgical implantation and patient telemetry.",
+                "isDemo": true
+              },
+              {
+                "id": "rel-1",
+                "sourceEntityId": "e-apexbio",
+                "targetEntityId": "e-boston",
+                "sourceEntityName": "ApexBio Dynamics",
+                "targetEntityName": "Boston, Massachusetts",
+                "type": "LOCATED_IN",
+                "description": "ApexBio Dynamics is headquartered in Boston, Massachusetts.",
+                "sourceChunkId": "demo-c1",
+                "documentId": "demo-doc-1",
+                "documentName": "ApexBio_Corporate_Overview.md",
+                "snippet": "ApexBio Dynamics is an advanced biotechnology and neuro-engineering company headquartered in Boston, Massachusetts.",
+                "isDemo": true
+              },
+              {
+                "id": "rel-4",
+                "sourceEntityId": "e-apexbio",
+                "targetEntityId": "e-neuroplex",
+                "sourceEntityName": "ApexBio Dynamics",
+                "targetEntityName": "NeuroPlex Bridge",
+                "type": "MANUFACTURES",
+                "description": "NeuroPlex Bridge is the proprietary hardware flagship developed by ApexBio.",
+                "sourceChunkId": "demo-c2",
+                "documentId": "demo-doc-1",
+                "documentName": "ApexBio_Corporate_Overview.md",
+                "snippet": "ApexBio's hardware flagship is the NeuroPlex Bridge, a high-density micro-electrode array implant...",
+                "isDemo": true
+              },
+              {
+                "id": "rel-5",
+                "sourceEntityId": "e-apexbio",
+                "targetEntityId": "e-stjude",
+                "sourceEntityName": "ApexBio Dynamics",
+                "targetEntityName": "St. Jude Neurological Institute",
+                "type": "PARTNERED_WITH",
+                "description": "ApexBio established a formal clinical research partnership with St. Jude.",
+                "sourceChunkId": "demo-c2",
+                "documentId": "demo-doc-1",
+                "documentName": "ApexBio_Corporate_Overview.md",
+                "snippet": "ApexBio Dynamics established a formal clinical research partnership with St. Jude Neurological Institute...",
+                "isDemo": true
+              }
+            ],
+            "confidence": "high",
+            "processingTimeMs": 2532,
+            "timestamp": "2026-10-26T10:10:53.519Z",
+            "modelUsed": "gemini-3.5-flash-lite",
+            "evidenceSufficient": true,
+            "retrievalMode": "hybrid"
+          },
+          "suggestedQuestions": [
+            "What evidence connects Dr. Elena Vance to ApexBio Dynamics?",
+            "How does Dr. Elena Vance relate to DEVELOPED?"
+          ],
+          "scopeUsed": {
+            "type": "all"
+          }
+        }
+      ],
+      "scope": {
+        "type": "all"
+      },
+      "createdAt": "2026-10-26T10:10:53.519Z",
+      "updatedAt": "2026-10-26T10:10:53.519Z"
+    },
+    {
+      "id": "conv-1793008979097-u501",
+      "title": "What is the NeuroPlex Bridge?",
+      "messages": [
+        {
+          "id": "usr-1793008979097",
+          "sender": "user",
+          "text": "What is the NeuroPlex Bridge?",
+          "timestamp": "2026-10-26T10:02:59.097Z",
+          "actionType": "ask",
+          "scopeUsed": {
+            "type": "selected",
+            "documentIds": [
+              "demo-doc-1"
+            ]
+          }
+        },
+        {
+          "id": "msg-1793008979097",
+          "sender": "assistant",
+          "text": "Based on the retrieved evidence:\n\nAccording to the knowledge graph and retrieved sources, **ApexBio Dynamics** manufactures **NeuroPlex Bridge** [ApexBio_Corporate_Overview.md], and **CerebroSync AI** deployed on **NeuroPlex Bridge** [Vance_CerebroSync_AI_Whitepaper.txt], and **ApexBio Dynamics** located in **Boston, Massachusetts** [ApexBio_Corporate_Overview.md].\n\nSpecifically, Section 2: NeuroPlex Bridge & Clinical Partnerships states: \"ApexBio's hardware flagship is the NeuroPlex Bridge, a high-density micro-electrode array implant designed for bio-compatible deep brain interface. In June 2024, ApexBio Dynamics established a formal ...\" [ApexBio_Corporate_Overview.md: Section 2: NeuroPlex Bridge & Clinical Partnerships].\n",
+          "timestamp": "2026-10-26T10:02:59.097Z",
+          "actionType": "ask",
+          "ragResponse": {
+            "id": "query-1793008979097",
+            "question": "What is the NeuroPlex Bridge?",
+            "answer": "Based on the retrieved evidence:\n\nAccording to the knowledge graph and retrieved sources, **ApexBio Dynamics** manufactures **NeuroPlex Bridge** [ApexBio_Corporate_Overview.md], and **CerebroSync AI** deployed on **NeuroPlex Bridge** [Vance_CerebroSync_AI_Whitepaper.txt], and **ApexBio Dynamics** located in **Boston, Massachusetts** [ApexBio_Corporate_Overview.md].\n\nSpecifically, Section 2: NeuroPlex Bridge & Clinical Partnerships states: \"ApexBio's hardware flagship is the NeuroPlex Bridge, a high-density micro-electrode array implant designed for bio-compatible deep brain interface. In June 2024, ApexBio Dynamics established a formal ...\" [ApexBio_Corporate_Overview.md: Section 2: NeuroPlex Bridge & Clinical Partnerships].\n",
+            "citations": [
+              {
+                "documentId": "demo-doc-1",
+                "documentName": "ApexBio_Corporate_Overview.md",
+                "chunkId": "demo-c2",
+                "pageOrSection": "Section 2: NeuroPlex Bridge & Clinical Partnerships",
+                "snippet": "ApexBio's hardware flagship is the NeuroPlex Bridge, a high-density micro-electrode array implant designed for bio-compatible deep brain interface. In June 2024, ApexBio Dynamics e...",
+                "relevanceScore": 0.7070000000000001,
+                "isDemo": true
+              },
+              {
+                "documentId": "demo-doc-1",
+                "documentName": "ApexBio_Corporate_Overview.md",
+                "chunkId": "demo-c1",
+                "pageOrSection": "Section 1: Corporate Origins & Leadership",
+                "snippet": "ApexBio Dynamics is an advanced biotechnology and neuro-engineering company headquartered in Boston, Massachusetts. Founded in 2018 by bioengineer Dr. Arthur Pendelton, the company...",
+                "relevanceScore": 0.476,
+                "isDemo": true
+              }
+            ],
+            "graphPaths": [],
+            "retrievedChunks": [
+              {
+                "chunk": {
+                  "id": "demo-c2",
+                  "documentId": "demo-doc-1",
+                  "documentName": "ApexBio_Corporate_Overview.md",
+                  "pageOrSection": "Section 2: NeuroPlex Bridge & Clinical Partnerships",
+                  "chunkIndex": 1,
+                  "text": "ApexBio's hardware flagship is the NeuroPlex Bridge, a high-density micro-electrode array implant designed for bio-compatible deep brain interface. In June 2024, ApexBio Dynamics established a formal clinical research partnership with St. Jude Neurological Institute to evaluate invasive AI-driven neural modulation protocols in human subjects.",
+                  "entityIds": [
+                    "e-apexbio",
+                    "e-neuroplex",
+                    "e-stjude"
+                  ],
+                  "isDemo": true
+                },
+                "score": 0.7070000000000001
+              },
+              {
+                "chunk": {
+                  "id": "demo-c1",
+                  "documentId": "demo-doc-1",
+                  "documentName": "ApexBio_Corporate_Overview.md",
+                  "pageOrSection": "Section 1: Corporate Origins & Leadership",
+                  "chunkIndex": 0,
+                  "text": "ApexBio Dynamics is an advanced biotechnology and neuro-engineering company headquartered in Boston, Massachusetts. Founded in 2018 by bioengineer Dr. Arthur Pendelton, the company recruited Dr. Elena Vance in November 2021 as Chief AI Neuroscientist to lead the Autonomous Neural Systems Division.",
+                  "entityIds": [
+                    "e-apexbio",
+                    "e-vance",
+                    "e-boston",
+                    "e-pendelton"
+                  ],
+                  "isDemo": true
+                },
+                "score": 0.476
+              }
+            ],
+            "matchedEntities": [
+              {
+                "id": "e-neuroplex",
+                "name": "NeuroPlex Bridge",
+                "type": "Technology",
+                "description": "High-density micro-electrode array hardware implant for deep brain interface.",
+                "mentionCount": 4,
+                "chunkIds": [
+                  "demo-c2",
+                  "demo-c3",
+                  "demo-c6"
+                ],
+                "isDemo": true
+              }
+            ],
+            "traversedRelationships": [
+              {
+                "id": "rel-4",
+                "sourceEntityId": "e-apexbio",
+                "targetEntityId": "e-neuroplex",
+                "sourceEntityName": "ApexBio Dynamics",
+                "targetEntityName": "NeuroPlex Bridge",
+                "type": "MANUFACTURES",
+                "description": "NeuroPlex Bridge is the proprietary hardware flagship developed by ApexBio.",
+                "sourceChunkId": "demo-c2",
+                "documentId": "demo-doc-1",
+                "documentName": "ApexBio_Corporate_Overview.md",
+                "snippet": "ApexBio's hardware flagship is the NeuroPlex Bridge, a high-density micro-electrode array implant...",
+                "isDemo": true
+              },
+              {
+                "id": "rel-7",
+                "sourceEntityId": "e-cerebrosync",
+                "targetEntityId": "e-neuroplex",
+                "sourceEntityName": "CerebroSync AI",
+                "targetEntityName": "NeuroPlex Bridge",
+                "type": "DEPLOYED_ON",
+                "description": "CerebroSync AI runs on and interfaces directly with the NeuroPlex Bridge implant.",
+                "sourceChunkId": "demo-c3",
+                "documentId": "demo-doc-2",
+                "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+                "snippet": "...interfaces directly with the NeuroPlex Bridge.",
+                "isDemo": true
+              },
+              {
+                "id": "rel-1",
+                "sourceEntityId": "e-apexbio",
+                "targetEntityId": "e-boston",
+                "sourceEntityName": "ApexBio Dynamics",
+                "targetEntityName": "Boston, Massachusetts",
+                "type": "LOCATED_IN",
+                "description": "ApexBio Dynamics is headquartered in Boston, Massachusetts.",
+                "sourceChunkId": "demo-c1",
+                "documentId": "demo-doc-1",
+                "documentName": "ApexBio_Corporate_Overview.md",
+                "snippet": "ApexBio Dynamics is an advanced biotechnology and neuro-engineering company headquartered in Boston, Massachusetts.",
+                "isDemo": true
+              },
+              {
+                "id": "rel-2",
+                "sourceEntityId": "e-pendelton",
+                "targetEntityId": "e-apexbio",
+                "sourceEntityName": "Dr. Arthur Pendelton",
+                "targetEntityName": "ApexBio Dynamics",
+                "type": "FOUNDED",
+                "description": "Dr. Arthur Pendelton founded ApexBio Dynamics in 2018.",
+                "sourceChunkId": "demo-c1",
+                "documentId": "demo-doc-1",
+                "documentName": "ApexBio_Corporate_Overview.md",
+                "snippet": "Founded in 2018 by bioengineer Dr. Arthur Pendelton...",
+                "isDemo": true
+              },
+              {
+                "id": "rel-3",
+                "sourceEntityId": "e-vance",
+                "targetEntityId": "e-apexbio",
+                "sourceEntityName": "Dr. Elena Vance",
+                "targetEntityName": "ApexBio Dynamics",
+                "type": "EMPLOYED_BY",
+                "description": "Dr. Elena Vance serves as Chief AI Neuroscientist leading Autonomous Neural Systems.",
+                "sourceChunkId": "demo-c1",
+                "documentId": "demo-doc-1",
+                "documentName": "ApexBio_Corporate_Overview.md",
+                "snippet": "...recruited Dr. Elena Vance in November 2021 as Chief AI Neuroscientist to lead the Autonomous Neural Systems Division.",
+                "isDemo": true
+              },
+              {
+                "id": "rel-5",
+                "sourceEntityId": "e-apexbio",
+                "targetEntityId": "e-stjude",
+                "sourceEntityName": "ApexBio Dynamics",
+                "targetEntityName": "St. Jude Neurological Institute",
+                "type": "PARTNERED_WITH",
+                "description": "ApexBio established a formal clinical research partnership with St. Jude.",
+                "sourceChunkId": "demo-c2",
+                "documentId": "demo-doc-1",
+                "documentName": "ApexBio_Corporate_Overview.md",
+                "snippet": "ApexBio Dynamics established a formal clinical research partnership with St. Jude Neurological Institute...",
+                "isDemo": true
+              },
+              {
+                "id": "rel-6",
+                "sourceEntityId": "e-vance",
+                "targetEntityId": "e-cerebrosync",
+                "sourceEntityName": "Dr. Elena Vance",
+                "targetEntityName": "CerebroSync AI",
+                "type": "DEVELOPED",
+                "description": "Dr. Elena Vance developed CerebroSync AI reinforcement learning model.",
+                "sourceChunkId": "demo-c3",
+                "documentId": "demo-doc-2",
+                "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+                "snippet": "Dr. Elena Vance developed CerebroSync AI, an edge-computed deep reinforcement learning framework...",
+                "isDemo": true
+              },
+              {
+                "id": "rel-8",
+                "sourceEntityId": "e-cerebrosync",
+                "targetEntityId": "e-parkinsons",
+                "sourceEntityName": "CerebroSync AI",
+                "targetEntityName": "Refractory Parkinson's Disease",
+                "type": "TREATS",
+                "description": "CerebroSync AI targets suppression of tremors in Refractory Parkinson's.",
+                "sourceChunkId": "demo-c4",
+                "documentId": "demo-doc-2",
+                "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+                "snippet": "The primary therapeutic target of CerebroSync AI is Refractory Parkinson's Disease in patients who no longer respond effectively to levodopa therapy.",
+                "isDemo": true
+              },
+              {
+                "id": "rel-11",
+                "sourceEntityId": "e-nct09428",
+                "targetEntityId": "e-cerebrosync",
+                "sourceEntityName": "Trial NCT-09428",
+                "targetEntityName": "CerebroSync AI",
+                "type": "EVALUATES",
+                "description": "Trial NCT-09428 evaluates the clinical efficacy of CerebroSync AI in human subjects.",
+                "sourceChunkId": "demo-c6",
+                "documentId": "demo-doc-3",
+                "documentName": "StJude_Clinical_Trial_Protocol_NCT09428.md",
+                "snippet": "Trial NCT-09428 evaluates the CerebroSync AI neuromodulation system embedded within the NeuroPlex Bridge...",
+                "isDemo": true
+              },
+              {
+                "id": "rel-12",
+                "sourceEntityId": "e-fda",
+                "targetEntityId": "e-cerebrosync",
+                "sourceEntityName": "U.S. FDA",
+                "targetEntityName": "CerebroSync AI",
+                "type": "GRANTED_DESIGNATION",
+                "description": "FDA granted Breakthrough Device Designation to the integrated CerebroSync AI system.",
+                "sourceChunkId": "demo-c6",
+                "documentId": "demo-doc-3",
+                "documentName": "StJude_Clinical_Trial_Protocol_NCT09428.md",
+                "snippet": "In October 2025, the U.S. FDA granted Breakthrough Device Designation to the integrated CerebroSync AI and NeuroPlex system.",
+                "isDemo": true
+              }
+            ],
+            "confidence": "high",
+            "processingTimeMs": 4367,
+            "timestamp": "2026-10-26T10:02:59.097Z",
+            "modelUsed": "gemini-3.8-flash",
+            "evidenceSufficient": true,
+            "retrievalMode": "hybrid"
+          },
+          "suggestedQuestions": [
+            "What evidence connects ApexBio Dynamics to NeuroPlex Bridge?",
+            "How does CerebroSync AI relate to DEPLOYED_ON?"
+          ],
+          "scopeUsed": {
+            "type": "selected",
+            "documentIds": [
+              "demo-doc-1"
+            ]
+          }
+        }
+      ],
+      "scope": {
+        "type": "selected",
+        "documentIds": [
+          "demo-doc-1"
+        ]
+      },
+      "createdAt": "2026-10-26T10:02:59.097Z",
+      "updatedAt": "2026-10-26T10:02:59.097Z"
+    },
+    {
+      "id": "conv-1793008974722-itfc",
+      "title": "What is the recommended dosage of Levodopa for p...",
+      "messages": [
+        {
+          "id": "usr-1793008974722",
+          "sender": "user",
+          "text": "What is the recommended dosage of Levodopa for pediatric patients in 2026?",
+          "timestamp": "2026-10-26T10:02:54.722Z",
+          "actionType": "ask",
+          "scopeUsed": {
+            "type": "all"
+          }
+        },
+        {
+          "id": "msg-1793008974722",
+          "sender": "assistant",
+          "text": "The retrieved documents state that patients \"no longer respond effectively to levodopa therapy\" [Vance_CerebroSync_AI_Whitepaper.txt: Section 2], but the repository contains insufficient evidence regarding specific numeric dosage amounts. The indexed text does not record prescribed dosages.",
+          "timestamp": "2026-10-26T10:02:54.722Z",
+          "actionType": "ask",
+          "ragResponse": {
+            "id": "query-1793008974722",
+            "question": "What is the recommended dosage of Levodopa for pediatric patients in 2026?",
+            "answer": "The retrieved documents state that patients \"no longer respond effectively to levodopa therapy\" [Vance_CerebroSync_AI_Whitepaper.txt: Section 2], but the repository contains insufficient evidence regarding specific numeric dosage amounts. The indexed text does not record prescribed dosages.",
+            "citations": [
+              {
+                "documentId": "demo-doc-3",
+                "documentName": "StJude_Clinical_Trial_Protocol_NCT09428.md",
+                "chunkId": "demo-c6",
+                "pageOrSection": "Section 2: Clinical Scope & FDA Designation",
+                "snippet": "Trial NCT-09428 evaluates the CerebroSync AI neuromodulation system embedded within the NeuroPlex Bridge for treating Refractory Parkinson's Disease. In October 2025, the U.S. FDA ...",
+                "relevanceScore": 0.328,
+                "isDemo": true
+              },
+              {
+                "documentId": "demo-doc-2",
+                "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+                "chunkId": "demo-c4",
+                "pageOrSection": "Section 2: Therapeutic Targets",
+                "snippet": "The primary therapeutic target of CerebroSync AI is Refractory Parkinson's Disease in patients who no longer respond effectively to levodopa therapy. In pre-clinical trials, Cerebr...",
+                "relevanceScore": 0.327,
+                "isDemo": true
+              },
+              {
+                "documentId": "demo-doc-1",
+                "documentName": "ApexBio_Corporate_Overview.md",
+                "chunkId": "demo-c2",
+                "pageOrSection": "Section 2: NeuroPlex Bridge & Clinical Partnerships",
+                "snippet": "ApexBio's hardware flagship is the NeuroPlex Bridge, a high-density micro-electrode array implant designed for bio-compatible deep brain interface. In June 2024, ApexBio Dynamics e...",
+                "relevanceScore": 0.19,
+                "isDemo": true
+              },
+              {
+                "documentId": "demo-doc-2",
+                "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+                "chunkId": "demo-c3",
+                "pageOrSection": "Section 1: CerebroSync AI Architecture",
+                "snippet": "Dr. Elena Vance developed CerebroSync AI, an edge-computed deep reinforcement learning framework that interfaces directly with the NeuroPlex Bridge. CerebroSync AI processes multi-...",
+                "relevanceScore": 0.19,
+                "isDemo": true
+              }
+            ],
+            "graphPaths": [],
+            "retrievedChunks": [
+              {
+                "chunk": {
+                  "id": "demo-c6",
+                  "documentId": "demo-doc-3",
+                  "documentName": "StJude_Clinical_Trial_Protocol_NCT09428.md",
+                  "pageOrSection": "Section 2: Clinical Scope & FDA Designation",
+                  "chunkIndex": 1,
+                  "text": "Trial NCT-09428 evaluates the CerebroSync AI neuromodulation system embedded within the NeuroPlex Bridge for treating Refractory Parkinson's Disease. In October 2025, the U.S. FDA granted Breakthrough Device Designation to the integrated CerebroSync AI and NeuroPlex system.",
+                  "entityIds": [
+                    "e-nct09428",
+                    "e-cerebrosync",
+                    "e-neuroplex",
+                    "e-parkinsons",
+                    "e-fda"
+                  ],
+                  "isDemo": true
+                },
+                "score": 0.328
+              },
+              {
+                "chunk": {
+                  "id": "demo-c4",
+                  "documentId": "demo-doc-2",
+                  "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+                  "pageOrSection": "Section 2: Therapeutic Targets",
+                  "chunkIndex": 1,
+                  "text": "The primary therapeutic target of CerebroSync AI is Refractory Parkinson's Disease in patients who no longer respond effectively to levodopa therapy. In pre-clinical trials, CerebroSync AI demonstrated an 84% reduction in off-target involuntary movements.",
+                  "entityIds": [
+                    "e-cerebrosync",
+                    "e-parkinsons"
+                  ],
+                  "isDemo": true
+                },
+                "score": 0.327
+              },
+              {
+                "chunk": {
+                  "id": "demo-c2",
+                  "documentId": "demo-doc-1",
+                  "documentName": "ApexBio_Corporate_Overview.md",
+                  "pageOrSection": "Section 2: NeuroPlex Bridge & Clinical Partnerships",
+                  "chunkIndex": 1,
+                  "text": "ApexBio's hardware flagship is the NeuroPlex Bridge, a high-density micro-electrode array implant designed for bio-compatible deep brain interface. In June 2024, ApexBio Dynamics established a formal clinical research partnership with St. Jude Neurological Institute to evaluate invasive AI-driven neural modulation protocols in human subjects.",
+                  "entityIds": [
+                    "e-apexbio",
+                    "e-neuroplex",
+                    "e-stjude"
+                  ],
+                  "isDemo": true
+                },
+                "score": 0.19
+              },
+              {
+                "chunk": {
+                  "id": "demo-c3",
+                  "documentId": "demo-doc-2",
+                  "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+                  "pageOrSection": "Section 1: CerebroSync AI Architecture",
+                  "chunkIndex": 0,
+                  "text": "Dr. Elena Vance developed CerebroSync AI, an edge-computed deep reinforcement learning framework that interfaces directly with the NeuroPlex Bridge. CerebroSync AI processes multi-channel local field potentials from the subthalamic nucleus and predicts pathological oscillatory tremor synchronization 120ms before onset.",
+                  "entityIds": [
+                    "e-vance",
+                    "e-cerebrosync",
+                    "e-neuroplex"
+                  ],
+                  "isDemo": true
+                },
+                "score": 0.19
+              }
+            ],
+            "matchedEntities": [],
+            "traversedRelationships": [],
+            "confidence": "insufficient_evidence",
+            "processingTimeMs": 389,
+            "timestamp": "2026-10-26T10:02:54.722Z",
+            "modelUsed": "gemini-3.8-flash",
+            "evidenceSufficient": true,
+            "retrievalMode": "hybrid"
+          },
+          "suggestedQuestions": [
+            "What are the key conclusions in StJude_Clinical_Trial_Protocol_NCT09428.md?",
+            "Are there any reported limitations in Section 2: Clinical Scope & FDA Designation?"
+          ],
+          "scopeUsed": {
+            "type": "all"
+          }
+        }
+      ],
+      "scope": {
+        "type": "all"
+      },
+      "createdAt": "2026-10-26T10:02:54.722Z",
+      "updatedAt": "2026-10-26T10:02:54.722Z"
+    },
+    {
+      "id": "conv-1793008974327-is1f",
+      "title": "Trial NCT-09428 evaluates the CerebroSync AI neu...",
+      "messages": [
+        {
+          "id": "usr-1793008974327",
+          "sender": "user",
+          "text": "Trial NCT-09428 evaluates the CerebroSync AI neuromodulation system for treating Refractory Parkinson's Disease.",
+          "timestamp": "2026-10-26T10:02:54.327Z",
+          "actionType": "check_claim",
+          "scopeUsed": {
+            "type": "all"
+          }
+        },
+        {
+          "id": "msg-1793008974327",
+          "sender": "assistant",
+          "text": "**Claim Verification Verdict: Supported by Document Evidence**\n\nClaim tested: \"Trial NCT-09428 evaluates the CerebroSync AI neuromodulation system for treating Refractory Parkinson's Disease.\"\n\n**Supporting Evidence:**\n• From [StJude_Clinical_Trial_Protocol_NCT09428.md: Section 2: Clinical Scope & FDA Designation]: \"Trial NCT-09428 evaluates the CerebroSync AI neuromodulation system embedded within the NeuroPlex Bridge for treating Refractory Parkinson's Disease. In October...\"\n• From [Vance_CerebroSync_AI_Whitepaper.txt: Section 2: Therapeutic Targets]: \"The primary therapeutic target of CerebroSync AI is Refractory Parkinson's Disease in patients who no longer respond effectively to levodopa therapy. In pre-cli...\"\n\n**Verified Graph Relationships:**\n• **Dr. Elena Vance** --[DEVELOPED]--> **CerebroSync AI** [Vance_CerebroSync_AI_Whitepaper.txt]\n• **CerebroSync AI** --[DEPLOYED_ON]--> **NeuroPlex Bridge** [Vance_CerebroSync_AI_Whitepaper.txt]\n\n*Note: This evaluation is strictly grounded in the uploaded collection and does not constitute a universal scientific verdict.*",
+          "timestamp": "2026-10-26T10:02:54.327Z",
+          "actionType": "check_claim",
+          "ragResponse": {
+            "id": "query-1793008974327",
+            "question": "Trial NCT-09428 evaluates the CerebroSync AI neuromodulation system for treating Refractory Parkinson's Disease.",
+            "answer": "**Claim Verification Verdict: Supported by Document Evidence**\n\nClaim tested: \"Trial NCT-09428 evaluates the CerebroSync AI neuromodulation system for treating Refractory Parkinson's Disease.\"\n\n**Supporting Evidence:**\n• From [StJude_Clinical_Trial_Protocol_NCT09428.md: Section 2: Clinical Scope & FDA Designation]: \"Trial NCT-09428 evaluates the CerebroSync AI neuromodulation system embedded within the NeuroPlex Bridge for treating Refractory Parkinson's Disease. In October...\"\n• From [Vance_CerebroSync_AI_Whitepaper.txt: Section 2: Therapeutic Targets]: \"The primary therapeutic target of CerebroSync AI is Refractory Parkinson's Disease in patients who no longer respond effectively to levodopa therapy. In pre-cli...\"\n\n**Verified Graph Relationships:**\n• **Dr. Elena Vance** --[DEVELOPED]--> **CerebroSync AI** [Vance_CerebroSync_AI_Whitepaper.txt]\n• **CerebroSync AI** --[DEPLOYED_ON]--> **NeuroPlex Bridge** [Vance_CerebroSync_AI_Whitepaper.txt]\n\n*Note: This evaluation is strictly grounded in the uploaded collection and does not constitute a universal scientific verdict.*",
+            "citations": [
+              {
+                "documentId": "demo-doc-3",
+                "documentName": "StJude_Clinical_Trial_Protocol_NCT09428.md",
+                "chunkId": "demo-c6",
+                "pageOrSection": "Section 2: Clinical Scope & FDA Designation",
+                "snippet": "Trial NCT-09428 evaluates the CerebroSync AI neuromodulation system embedded within the NeuroPlex Bridge for treating Refractory Parkinson's Disease. In October 2025, the U.S. FDA ...",
+                "relevanceScore": 1,
+                "isDemo": true
+              },
+              {
+                "documentId": "demo-doc-2",
+                "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+                "chunkId": "demo-c4",
+                "pageOrSection": "Section 2: Therapeutic Targets",
+                "snippet": "The primary therapeutic target of CerebroSync AI is Refractory Parkinson's Disease in patients who no longer respond effectively to levodopa therapy. In pre-clinical trials, Cerebr...",
+                "relevanceScore": 0.667,
+                "isDemo": true
+              },
+              {
+                "documentId": "demo-doc-2",
+                "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+                "chunkId": "demo-c3",
+                "pageOrSection": "Section 1: CerebroSync AI Architecture",
+                "snippet": "Dr. Elena Vance developed CerebroSync AI, an edge-computed deep reinforcement learning framework that interfaces directly with the NeuroPlex Bridge. CerebroSync AI processes multi-...",
+                "relevanceScore": 0.46699999999999997,
+                "isDemo": true
+              },
+              {
+                "documentId": "demo-doc-3",
+                "documentName": "StJude_Clinical_Trial_Protocol_NCT09428.md",
+                "chunkId": "demo-c5",
+                "pageOrSection": "Section 1: Protocol & Leadership",
+                "snippet": "Clinical Trial NCT-09428 is sponsored by ApexBio Dynamics and conducted at St. Jude Neurological Institute in Chicago. Dr. Marcus Thorne, Chief of Clinical Neurology at St. Jude, s...",
+                "relevanceScore": 0.379,
+                "isDemo": true
+              }
+            ],
+            "graphPaths": [
+              {
+                "nodes": [
+                  {
+                    "id": "e-cerebrosync",
+                    "name": "CerebroSync AI",
+                    "type": "Product"
+                  },
+                  {
+                    "id": "e-parkinsons",
+                    "name": "Refractory Parkinson's Disease",
+                    "type": "Condition"
+                  }
+                ],
+                "edges": [
+                  {
+                    "source": "CerebroSync AI",
+                    "target": "Refractory Parkinson's Disease",
+                    "type": "TREATS"
+                  }
+                ],
+                "description": "CerebroSync AI -> [TREATS] -> Refractory Parkinson's Disease"
+              },
+              {
+                "nodes": [
+                  {
+                    "id": "e-cerebrosync",
+                    "name": "CerebroSync AI",
+                    "type": "Product"
+                  },
+                  {
+                    "id": "e-nct09428",
+                    "name": "Trial NCT-09428",
+                    "type": "ClinicalTrial"
+                  }
+                ],
+                "edges": [
+                  {
+                    "source": "Trial NCT-09428",
+                    "target": "CerebroSync AI",
+                    "type": "EVALUATES"
+                  }
+                ],
+                "description": "CerebroSync AI -> [EVALUATES] -> Trial NCT-09428"
+              }
+            ],
+            "retrievedChunks": [
+              {
+                "chunk": {
+                  "id": "demo-c6",
+                  "documentId": "demo-doc-3",
+                  "documentName": "StJude_Clinical_Trial_Protocol_NCT09428.md",
+                  "pageOrSection": "Section 2: Clinical Scope & FDA Designation",
+                  "chunkIndex": 1,
+                  "text": "Trial NCT-09428 evaluates the CerebroSync AI neuromodulation system embedded within the NeuroPlex Bridge for treating Refractory Parkinson's Disease. In October 2025, the U.S. FDA granted Breakthrough Device Designation to the integrated CerebroSync AI and NeuroPlex system.",
+                  "entityIds": [
+                    "e-nct09428",
+                    "e-cerebrosync",
+                    "e-neuroplex",
+                    "e-parkinsons",
+                    "e-fda"
+                  ],
+                  "isDemo": true
+                },
+                "score": 1
+              },
+              {
+                "chunk": {
+                  "id": "demo-c4",
+                  "documentId": "demo-doc-2",
+                  "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+                  "pageOrSection": "Section 2: Therapeutic Targets",
+                  "chunkIndex": 1,
+                  "text": "The primary therapeutic target of CerebroSync AI is Refractory Parkinson's Disease in patients who no longer respond effectively to levodopa therapy. In pre-clinical trials, CerebroSync AI demonstrated an 84% reduction in off-target involuntary movements.",
+                  "entityIds": [
+                    "e-cerebrosync",
+                    "e-parkinsons"
+                  ],
+                  "isDemo": true
+                },
+                "score": 0.667
+              },
+              {
+                "chunk": {
+                  "id": "demo-c3",
+                  "documentId": "demo-doc-2",
+                  "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+                  "pageOrSection": "Section 1: CerebroSync AI Architecture",
+                  "chunkIndex": 0,
+                  "text": "Dr. Elena Vance developed CerebroSync AI, an edge-computed deep reinforcement learning framework that interfaces directly with the NeuroPlex Bridge. CerebroSync AI processes multi-channel local field potentials from the subthalamic nucleus and predicts pathological oscillatory tremor synchronization 120ms before onset.",
+                  "entityIds": [
+                    "e-vance",
+                    "e-cerebrosync",
+                    "e-neuroplex"
+                  ],
+                  "isDemo": true
+                },
+                "score": 0.46699999999999997
+              },
+              {
+                "chunk": {
+                  "id": "demo-c5",
+                  "documentId": "demo-doc-3",
+                  "documentName": "StJude_Clinical_Trial_Protocol_NCT09428.md",
+                  "pageOrSection": "Section 1: Protocol & Leadership",
+                  "chunkIndex": 0,
+                  "text": "Clinical Trial NCT-09428 is sponsored by ApexBio Dynamics and conducted at St. Jude Neurological Institute in Chicago. Dr. Marcus Thorne, Chief of Clinical Neurology at St. Jude, serves as Principal Investigator, supervising surgical implantation and patient telemetry.",
+                  "entityIds": [
+                    "e-nct09428",
+                    "e-apexbio",
+                    "e-stjude",
+                    "e-thorne"
+                  ],
+                  "isDemo": true
+                },
+                "score": 0.379
+              }
+            ],
+            "matchedEntities": [
+              {
+                "id": "e-cerebrosync",
+                "name": "CerebroSync AI",
+                "type": "Product",
+                "description": "Closed-loop deep reinforcement learning algorithm for adaptive tremor modulation.",
+                "mentionCount": 4,
+                "chunkIds": [
+                  "demo-c3",
+                  "demo-c4",
+                  "demo-c6"
+                ],
+                "isDemo": true
+              },
+              {
+                "id": "e-parkinsons",
+                "name": "Refractory Parkinson's Disease",
+                "type": "Condition",
+                "description": "Drug-resistant neurodegenerative condition targeted by CerebroSync AI.",
+                "mentionCount": 2,
+                "chunkIds": [
+                  "demo-c4",
+                  "demo-c6"
+                ],
+                "isDemo": true
+              },
+              {
+                "id": "e-nct09428",
+                "name": "Trial NCT-09428",
+                "type": "ClinicalTrial",
+                "description": "Phase II clinical trial evaluating CerebroSync AI on the NeuroPlex Bridge.",
+                "mentionCount": 3,
+                "chunkIds": [
+                  "demo-c5",
+                  "demo-c6"
+                ],
+                "isDemo": true
+              }
+            ],
+            "traversedRelationships": [
+              {
+                "id": "rel-6",
+                "sourceEntityId": "e-vance",
+                "targetEntityId": "e-cerebrosync",
+                "sourceEntityName": "Dr. Elena Vance",
+                "targetEntityName": "CerebroSync AI",
+                "type": "DEVELOPED",
+                "description": "Dr. Elena Vance developed CerebroSync AI reinforcement learning model.",
+                "sourceChunkId": "demo-c3",
+                "documentId": "demo-doc-2",
+                "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+                "snippet": "Dr. Elena Vance developed CerebroSync AI, an edge-computed deep reinforcement learning framework...",
+                "isDemo": true
+              },
+              {
+                "id": "rel-7",
+                "sourceEntityId": "e-cerebrosync",
+                "targetEntityId": "e-neuroplex",
+                "sourceEntityName": "CerebroSync AI",
+                "targetEntityName": "NeuroPlex Bridge",
+                "type": "DEPLOYED_ON",
+                "description": "CerebroSync AI runs on and interfaces directly with the NeuroPlex Bridge implant.",
+                "sourceChunkId": "demo-c3",
+                "documentId": "demo-doc-2",
+                "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+                "snippet": "...interfaces directly with the NeuroPlex Bridge.",
+                "isDemo": true
+              },
+              {
+                "id": "rel-8",
+                "sourceEntityId": "e-cerebrosync",
+                "targetEntityId": "e-parkinsons",
+                "sourceEntityName": "CerebroSync AI",
+                "targetEntityName": "Refractory Parkinson's Disease",
+                "type": "TREATS",
+                "description": "CerebroSync AI targets suppression of tremors in Refractory Parkinson's.",
+                "sourceChunkId": "demo-c4",
+                "documentId": "demo-doc-2",
+                "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+                "snippet": "The primary therapeutic target of CerebroSync AI is Refractory Parkinson's Disease in patients who no longer respond effectively to levodopa therapy.",
+                "isDemo": true
+              },
+              {
+                "id": "rel-11",
+                "sourceEntityId": "e-nct09428",
+                "targetEntityId": "e-cerebrosync",
+                "sourceEntityName": "Trial NCT-09428",
+                "targetEntityName": "CerebroSync AI",
+                "type": "EVALUATES",
+                "description": "Trial NCT-09428 evaluates the clinical efficacy of CerebroSync AI in human subjects.",
+                "sourceChunkId": "demo-c6",
+                "documentId": "demo-doc-3",
+                "documentName": "StJude_Clinical_Trial_Protocol_NCT09428.md",
+                "snippet": "Trial NCT-09428 evaluates the CerebroSync AI neuromodulation system embedded within the NeuroPlex Bridge...",
+                "isDemo": true
+              },
+              {
+                "id": "rel-12",
+                "sourceEntityId": "e-fda",
+                "targetEntityId": "e-cerebrosync",
+                "sourceEntityName": "U.S. FDA",
+                "targetEntityName": "CerebroSync AI",
+                "type": "GRANTED_DESIGNATION",
+                "description": "FDA granted Breakthrough Device Designation to the integrated CerebroSync AI system.",
+                "sourceChunkId": "demo-c6",
+                "documentId": "demo-doc-3",
+                "documentName": "StJude_Clinical_Trial_Protocol_NCT09428.md",
+                "snippet": "In October 2025, the U.S. FDA granted Breakthrough Device Designation to the integrated CerebroSync AI and NeuroPlex system.",
+                "isDemo": true
+              },
+              {
+                "id": "rel-10",
+                "sourceEntityId": "e-thorne",
+                "targetEntityId": "e-nct09428",
+                "sourceEntityName": "Dr. Marcus Thorne",
+                "targetEntityName": "Trial NCT-09428",
+                "type": "DIRECTS",
+                "description": "Dr. Marcus Thorne serves as Principal Investigator for Trial NCT-09428.",
+                "sourceChunkId": "demo-c5",
+                "documentId": "demo-doc-3",
+                "documentName": "StJude_Clinical_Trial_Protocol_NCT09428.md",
+                "snippet": "Dr. Marcus Thorne... serves as Principal Investigator, supervising surgical implantation and patient telemetry.",
+                "isDemo": true
+              },
+              {
+                "id": "rel-3",
+                "sourceEntityId": "e-vance",
+                "targetEntityId": "e-apexbio",
+                "sourceEntityName": "Dr. Elena Vance",
+                "targetEntityName": "ApexBio Dynamics",
+                "type": "EMPLOYED_BY",
+                "description": "Dr. Elena Vance serves as Chief AI Neuroscientist leading Autonomous Neural Systems.",
+                "sourceChunkId": "demo-c1",
+                "documentId": "demo-doc-1",
+                "documentName": "ApexBio_Corporate_Overview.md",
+                "snippet": "...recruited Dr. Elena Vance in November 2021 as Chief AI Neuroscientist to lead the Autonomous Neural Systems Division.",
+                "isDemo": true
+              },
+              {
+                "id": "rel-4",
+                "sourceEntityId": "e-apexbio",
+                "targetEntityId": "e-neuroplex",
+                "sourceEntityName": "ApexBio Dynamics",
+                "targetEntityName": "NeuroPlex Bridge",
+                "type": "MANUFACTURES",
+                "description": "NeuroPlex Bridge is the proprietary hardware flagship developed by ApexBio.",
+                "sourceChunkId": "demo-c2",
+                "documentId": "demo-doc-1",
+                "documentName": "ApexBio_Corporate_Overview.md",
+                "snippet": "ApexBio's hardware flagship is the NeuroPlex Bridge, a high-density micro-electrode array implant...",
+                "isDemo": true
+              },
+              {
+                "id": "rel-9",
+                "sourceEntityId": "e-thorne",
+                "targetEntityId": "e-stjude",
+                "sourceEntityName": "Dr. Marcus Thorne",
+                "targetEntityName": "St. Jude Neurological Institute",
+                "type": "AFFILIATED_WITH",
+                "description": "Dr. Marcus Thorne is Chief of Clinical Neurology at St. Jude.",
+                "sourceChunkId": "demo-c5",
+                "documentId": "demo-doc-3",
+                "documentName": "StJude_Clinical_Trial_Protocol_NCT09428.md",
+                "snippet": "Dr. Marcus Thorne, Chief of Clinical Neurology at St. Jude, serves as Principal Investigator...",
+                "isDemo": true
+              }
+            ],
+            "confidence": "high",
+            "processingTimeMs": 430,
+            "timestamp": "2026-10-26T10:02:54.327Z",
+            "modelUsed": "gemini-3.8-flash",
+            "evidenceSufficient": true,
+            "retrievalMode": "hybrid"
+          },
+          "claimVerdict": "supported",
+          "suggestedQuestions": [
+            "What evidence connects Dr. Elena Vance to CerebroSync AI?",
+            "How does CerebroSync AI relate to DEPLOYED_ON?"
+          ],
+          "scopeUsed": {
+            "type": "all"
+          }
+        }
+      ],
+      "scope": {
+        "type": "all"
+      },
+      "createdAt": "2026-10-26T10:02:54.327Z",
+      "updatedAt": "2026-10-26T10:02:54.327Z"
+    },
+    {
+      "id": "conv-1793008973890-kmfa",
+      "title": "How are Dr. Elena Vance and Dr. Marcus Thorne co...",
+      "messages": [
+        {
+          "id": "usr-1793008973890",
+          "sender": "user",
+          "text": "How are Dr. Elena Vance and Dr. Marcus Thorne connected?",
+          "timestamp": "2026-10-26T10:02:53.890Z",
+          "actionType": "find_connections",
+          "scopeUsed": {
+            "type": "all"
+          }
+        },
+        {
+          "id": "msg-1793008973890",
+          "sender": "assistant",
+          "text": "### Knowledge Graph Connection Overview\n\n1. **Dr. Elena Vance** --[EMPLOYED_BY]--> **ApexBio Dynamics**\n   *Source quote:* \"...recruited Dr. Elena Vance in November 2021 as Chief AI Neuroscientist to lead the Autonomous Neural Systems Division.\" [ApexBio_Corporate_Overview.md]\n2. **Dr. Elena Vance** --[DEVELOPED]--> **CerebroSync AI**\n   *Source quote:* \"Dr. Elena Vance developed CerebroSync AI, an edge-computed deep reinforcement learning framework...\" [Vance_CerebroSync_AI_Whitepaper.txt]\n3. **Dr. Arthur Pendelton** --[FOUNDED]--> **ApexBio Dynamics**\n   *Source quote:* \"Founded in 2018 by bioengineer Dr. Arthur Pendelton...\" [ApexBio_Corporate_Overview.md]\n4. **Dr. Marcus Thorne** --[AFFILIATED_WITH]--> **St. Jude Neurological Institute**\n   *Source quote:* \"Dr. Marcus Thorne, Chief of Clinical Neurology at St. Jude, serves as Principal Investigator...\" [StJude_Clinical_Trial_Protocol_NCT09428.md]\n",
+          "timestamp": "2026-10-26T10:02:53.890Z",
+          "actionType": "find_connections",
+          "ragResponse": {
+            "id": "query-1793008973890",
+            "question": "How are Dr. Elena Vance and Dr. Marcus Thorne connected?",
+            "answer": "### Knowledge Graph Connection Overview\n\n1. **Dr. Elena Vance** --[EMPLOYED_BY]--> **ApexBio Dynamics**\n   *Source quote:* \"...recruited Dr. Elena Vance in November 2021 as Chief AI Neuroscientist to lead the Autonomous Neural Systems Division.\" [ApexBio_Corporate_Overview.md]\n2. **Dr. Elena Vance** --[DEVELOPED]--> **CerebroSync AI**\n   *Source quote:* \"Dr. Elena Vance developed CerebroSync AI, an edge-computed deep reinforcement learning framework...\" [Vance_CerebroSync_AI_Whitepaper.txt]\n3. **Dr. Arthur Pendelton** --[FOUNDED]--> **ApexBio Dynamics**\n   *Source quote:* \"Founded in 2018 by bioengineer Dr. Arthur Pendelton...\" [ApexBio_Corporate_Overview.md]\n4. **Dr. Marcus Thorne** --[AFFILIATED_WITH]--> **St. Jude Neurological Institute**\n   *Source quote:* \"Dr. Marcus Thorne, Chief of Clinical Neurology at St. Jude, serves as Principal Investigator...\" [StJude_Clinical_Trial_Protocol_NCT09428.md]\n",
+            "citations": [
+              {
+                "documentId": "demo-doc-3",
+                "documentName": "StJude_Clinical_Trial_Protocol_NCT09428.md",
+                "chunkId": "demo-c5",
+                "pageOrSection": "Section 1: Protocol & Leadership",
+                "snippet": "Clinical Trial NCT-09428 is sponsored by ApexBio Dynamics and conducted at St. Jude Neurological Institute in Chicago. Dr. Marcus Thorne, Chief of Clinical Neurology at St. Jude, s...",
+                "relevanceScore": 0.599,
+                "isDemo": true
+              },
+              {
+                "documentId": "demo-doc-1",
+                "documentName": "ApexBio_Corporate_Overview.md",
+                "chunkId": "demo-c1",
+                "pageOrSection": "Section 1: Corporate Origins & Leadership",
+                "snippet": "ApexBio Dynamics is an advanced biotechnology and neuro-engineering company headquartered in Boston, Massachusetts. Founded in 2018 by bioengineer Dr. Arthur Pendelton, the company...",
+                "relevanceScore": 0.542,
+                "isDemo": true
+              },
+              {
+                "documentId": "demo-doc-2",
+                "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+                "chunkId": "demo-c3",
+                "pageOrSection": "Section 1: CerebroSync AI Architecture",
+                "snippet": "Dr. Elena Vance developed CerebroSync AI, an edge-computed deep reinforcement learning framework that interfaces directly with the NeuroPlex Bridge. CerebroSync AI processes multi-...",
+                "relevanceScore": 0.532,
+                "isDemo": true
+              },
+              {
+                "documentId": "demo-doc-3",
+                "documentName": "StJude_Clinical_Trial_Protocol_NCT09428.md",
+                "chunkId": "demo-c6",
+                "pageOrSection": "Section 2: Clinical Scope & FDA Designation",
+                "snippet": "Trial NCT-09428 evaluates the CerebroSync AI neuromodulation system embedded within the NeuroPlex Bridge for treating Refractory Parkinson's Disease. In October 2025, the U.S. FDA ...",
+                "relevanceScore": 0.33799999999999997,
+                "isDemo": true
+              }
+            ],
+            "graphPaths": [],
+            "retrievedChunks": [
+              {
+                "chunk": {
+                  "id": "demo-c5",
+                  "documentId": "demo-doc-3",
+                  "documentName": "StJude_Clinical_Trial_Protocol_NCT09428.md",
+                  "pageOrSection": "Section 1: Protocol & Leadership",
+                  "chunkIndex": 0,
+                  "text": "Clinical Trial NCT-09428 is sponsored by ApexBio Dynamics and conducted at St. Jude Neurological Institute in Chicago. Dr. Marcus Thorne, Chief of Clinical Neurology at St. Jude, serves as Principal Investigator, supervising surgical implantation and patient telemetry.",
+                  "entityIds": [
+                    "e-nct09428",
+                    "e-apexbio",
+                    "e-stjude",
+                    "e-thorne"
+                  ],
+                  "isDemo": true
+                },
+                "score": 0.599
+              },
+              {
+                "chunk": {
+                  "id": "demo-c1",
+                  "documentId": "demo-doc-1",
+                  "documentName": "ApexBio_Corporate_Overview.md",
+                  "pageOrSection": "Section 1: Corporate Origins & Leadership",
+                  "chunkIndex": 0,
+                  "text": "ApexBio Dynamics is an advanced biotechnology and neuro-engineering company headquartered in Boston, Massachusetts. Founded in 2018 by bioengineer Dr. Arthur Pendelton, the company recruited Dr. Elena Vance in November 2021 as Chief AI Neuroscientist to lead the Autonomous Neural Systems Division.",
+                  "entityIds": [
+                    "e-apexbio",
+                    "e-vance",
+                    "e-boston",
+                    "e-pendelton"
+                  ],
+                  "isDemo": true
+                },
+                "score": 0.542
+              },
+              {
+                "chunk": {
+                  "id": "demo-c3",
+                  "documentId": "demo-doc-2",
+                  "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+                  "pageOrSection": "Section 1: CerebroSync AI Architecture",
+                  "chunkIndex": 0,
+                  "text": "Dr. Elena Vance developed CerebroSync AI, an edge-computed deep reinforcement learning framework that interfaces directly with the NeuroPlex Bridge. CerebroSync AI processes multi-channel local field potentials from the subthalamic nucleus and predicts pathological oscillatory tremor synchronization 120ms before onset.",
+                  "entityIds": [
+                    "e-vance",
+                    "e-cerebrosync",
+                    "e-neuroplex"
+                  ],
+                  "isDemo": true
+                },
+                "score": 0.532
+              },
+              {
+                "chunk": {
+                  "id": "demo-c6",
+                  "documentId": "demo-doc-3",
+                  "documentName": "StJude_Clinical_Trial_Protocol_NCT09428.md",
+                  "pageOrSection": "Section 2: Clinical Scope & FDA Designation",
+                  "chunkIndex": 1,
+                  "text": "Trial NCT-09428 evaluates the CerebroSync AI neuromodulation system embedded within the NeuroPlex Bridge for treating Refractory Parkinson's Disease. In October 2025, the U.S. FDA granted Breakthrough Device Designation to the integrated CerebroSync AI and NeuroPlex system.",
+                  "entityIds": [
+                    "e-nct09428",
+                    "e-cerebrosync",
+                    "e-neuroplex",
+                    "e-parkinsons",
+                    "e-fda"
+                  ],
+                  "isDemo": true
+                },
+                "score": 0.33799999999999997
+              }
+            ],
+            "matchedEntities": [
+              {
+                "id": "e-vance",
+                "name": "Dr. Elena Vance",
+                "type": "Person",
+                "description": "Chief AI Neuroscientist at ApexBio Dynamics and creator of CerebroSync AI.",
+                "mentionCount": 3,
+                "chunkIds": [
+                  "demo-c1",
+                  "demo-c3"
+                ],
+                "isDemo": true
+              },
+              {
+                "id": "e-pendelton",
+                "name": "Dr. Arthur Pendelton",
+                "type": "Person",
+                "description": "Bioengineer and founder of ApexBio Dynamics (2018).",
+                "mentionCount": 1,
+                "chunkIds": [
+                  "demo-c1"
+                ],
+                "isDemo": true
+              },
+              {
+                "id": "e-thorne",
+                "name": "Dr. Marcus Thorne",
+                "type": "Person",
+                "description": "Chief of Clinical Neurology at St. Jude Neurological Institute and PI of NCT-09428.",
+                "mentionCount": 2,
+                "chunkIds": [
+                  "demo-c5"
+                ],
+                "isDemo": true
+              }
+            ],
+            "traversedRelationships": [
+              {
+                "id": "rel-3",
+                "sourceEntityId": "e-vance",
+                "targetEntityId": "e-apexbio",
+                "sourceEntityName": "Dr. Elena Vance",
+                "targetEntityName": "ApexBio Dynamics",
+                "type": "EMPLOYED_BY",
+                "description": "Dr. Elena Vance serves as Chief AI Neuroscientist leading Autonomous Neural Systems.",
+                "sourceChunkId": "demo-c1",
+                "documentId": "demo-doc-1",
+                "documentName": "ApexBio_Corporate_Overview.md",
+                "snippet": "...recruited Dr. Elena Vance in November 2021 as Chief AI Neuroscientist to lead the Autonomous Neural Systems Division.",
+                "isDemo": true
+              },
+              {
+                "id": "rel-6",
+                "sourceEntityId": "e-vance",
+                "targetEntityId": "e-cerebrosync",
+                "sourceEntityName": "Dr. Elena Vance",
+                "targetEntityName": "CerebroSync AI",
+                "type": "DEVELOPED",
+                "description": "Dr. Elena Vance developed CerebroSync AI reinforcement learning model.",
+                "sourceChunkId": "demo-c3",
+                "documentId": "demo-doc-2",
+                "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+                "snippet": "Dr. Elena Vance developed CerebroSync AI, an edge-computed deep reinforcement learning framework...",
+                "isDemo": true
+              },
+              {
+                "id": "rel-2",
+                "sourceEntityId": "e-pendelton",
+                "targetEntityId": "e-apexbio",
+                "sourceEntityName": "Dr. Arthur Pendelton",
+                "targetEntityName": "ApexBio Dynamics",
+                "type": "FOUNDED",
+                "description": "Dr. Arthur Pendelton founded ApexBio Dynamics in 2018.",
+                "sourceChunkId": "demo-c1",
+                "documentId": "demo-doc-1",
+                "documentName": "ApexBio_Corporate_Overview.md",
+                "snippet": "Founded in 2018 by bioengineer Dr. Arthur Pendelton...",
+                "isDemo": true
+              },
+              {
+                "id": "rel-9",
+                "sourceEntityId": "e-thorne",
+                "targetEntityId": "e-stjude",
+                "sourceEntityName": "Dr. Marcus Thorne",
+                "targetEntityName": "St. Jude Neurological Institute",
+                "type": "AFFILIATED_WITH",
+                "description": "Dr. Marcus Thorne is Chief of Clinical Neurology at St. Jude.",
+                "sourceChunkId": "demo-c5",
+                "documentId": "demo-doc-3",
+                "documentName": "StJude_Clinical_Trial_Protocol_NCT09428.md",
+                "snippet": "Dr. Marcus Thorne, Chief of Clinical Neurology at St. Jude, serves as Principal Investigator...",
+                "isDemo": true
+              },
+              {
+                "id": "rel-10",
+                "sourceEntityId": "e-thorne",
+                "targetEntityId": "e-nct09428",
+                "sourceEntityName": "Dr. Marcus Thorne",
+                "targetEntityName": "Trial NCT-09428",
+                "type": "DIRECTS",
+                "description": "Dr. Marcus Thorne serves as Principal Investigator for Trial NCT-09428.",
+                "sourceChunkId": "demo-c5",
+                "documentId": "demo-doc-3",
+                "documentName": "StJude_Clinical_Trial_Protocol_NCT09428.md",
+                "snippet": "Dr. Marcus Thorne... serves as Principal Investigator, supervising surgical implantation and patient telemetry.",
+                "isDemo": true
+              },
+              {
+                "id": "rel-1",
+                "sourceEntityId": "e-apexbio",
+                "targetEntityId": "e-boston",
+                "sourceEntityName": "ApexBio Dynamics",
+                "targetEntityName": "Boston, Massachusetts",
+                "type": "LOCATED_IN",
+                "description": "ApexBio Dynamics is headquartered in Boston, Massachusetts.",
+                "sourceChunkId": "demo-c1",
+                "documentId": "demo-doc-1",
+                "documentName": "ApexBio_Corporate_Overview.md",
+                "snippet": "ApexBio Dynamics is an advanced biotechnology and neuro-engineering company headquartered in Boston, Massachusetts.",
+                "isDemo": true
+              },
+              {
+                "id": "rel-4",
+                "sourceEntityId": "e-apexbio",
+                "targetEntityId": "e-neuroplex",
+                "sourceEntityName": "ApexBio Dynamics",
+                "targetEntityName": "NeuroPlex Bridge",
+                "type": "MANUFACTURES",
+                "description": "NeuroPlex Bridge is the proprietary hardware flagship developed by ApexBio.",
+                "sourceChunkId": "demo-c2",
+                "documentId": "demo-doc-1",
+                "documentName": "ApexBio_Corporate_Overview.md",
+                "snippet": "ApexBio's hardware flagship is the NeuroPlex Bridge, a high-density micro-electrode array implant...",
+                "isDemo": true
+              },
+              {
+                "id": "rel-5",
+                "sourceEntityId": "e-apexbio",
+                "targetEntityId": "e-stjude",
+                "sourceEntityName": "ApexBio Dynamics",
+                "targetEntityName": "St. Jude Neurological Institute",
+                "type": "PARTNERED_WITH",
+                "description": "ApexBio established a formal clinical research partnership with St. Jude.",
+                "sourceChunkId": "demo-c2",
+                "documentId": "demo-doc-1",
+                "documentName": "ApexBio_Corporate_Overview.md",
+                "snippet": "ApexBio Dynamics established a formal clinical research partnership with St. Jude Neurological Institute...",
+                "isDemo": true
+              },
+              {
+                "id": "rel-7",
+                "sourceEntityId": "e-cerebrosync",
+                "targetEntityId": "e-neuroplex",
+                "sourceEntityName": "CerebroSync AI",
+                "targetEntityName": "NeuroPlex Bridge",
+                "type": "DEPLOYED_ON",
+                "description": "CerebroSync AI runs on and interfaces directly with the NeuroPlex Bridge implant.",
+                "sourceChunkId": "demo-c3",
+                "documentId": "demo-doc-2",
+                "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+                "snippet": "...interfaces directly with the NeuroPlex Bridge.",
+                "isDemo": true
+              },
+              {
+                "id": "rel-8",
+                "sourceEntityId": "e-cerebrosync",
+                "targetEntityId": "e-parkinsons",
+                "sourceEntityName": "CerebroSync AI",
+                "targetEntityName": "Refractory Parkinson's Disease",
+                "type": "TREATS",
+                "description": "CerebroSync AI targets suppression of tremors in Refractory Parkinson's.",
+                "sourceChunkId": "demo-c4",
+                "documentId": "demo-doc-2",
+                "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+                "snippet": "The primary therapeutic target of CerebroSync AI is Refractory Parkinson's Disease in patients who no longer respond effectively to levodopa therapy.",
+                "isDemo": true
+              },
+              {
+                "id": "rel-11",
+                "sourceEntityId": "e-nct09428",
+                "targetEntityId": "e-cerebrosync",
+                "sourceEntityName": "Trial NCT-09428",
+                "targetEntityName": "CerebroSync AI",
+                "type": "EVALUATES",
+                "description": "Trial NCT-09428 evaluates the clinical efficacy of CerebroSync AI in human subjects.",
+                "sourceChunkId": "demo-c6",
+                "documentId": "demo-doc-3",
+                "documentName": "StJude_Clinical_Trial_Protocol_NCT09428.md",
+                "snippet": "Trial NCT-09428 evaluates the CerebroSync AI neuromodulation system embedded within the NeuroPlex Bridge...",
+                "isDemo": true
+              },
+              {
+                "id": "rel-12",
+                "sourceEntityId": "e-fda",
+                "targetEntityId": "e-cerebrosync",
+                "sourceEntityName": "U.S. FDA",
+                "targetEntityName": "CerebroSync AI",
+                "type": "GRANTED_DESIGNATION",
+                "description": "FDA granted Breakthrough Device Designation to the integrated CerebroSync AI system.",
+                "sourceChunkId": "demo-c6",
+                "documentId": "demo-doc-3",
+                "documentName": "StJude_Clinical_Trial_Protocol_NCT09428.md",
+                "snippet": "In October 2025, the U.S. FDA granted Breakthrough Device Designation to the integrated CerebroSync AI and NeuroPlex system.",
+                "isDemo": true
+              }
+            ],
+            "confidence": "high",
+            "processingTimeMs": 452,
+            "timestamp": "2026-10-26T10:02:53.890Z",
+            "modelUsed": "gemini-3.8-flash",
+            "evidenceSufficient": true,
+            "retrievalMode": "hybrid"
+          },
+          "suggestedQuestions": [
+            "What evidence connects Dr. Elena Vance to ApexBio Dynamics?",
+            "How does Dr. Elena Vance relate to DEVELOPED?"
+          ],
+          "scopeUsed": {
+            "type": "all"
+          }
+        }
+      ],
+      "scope": {
+        "type": "all"
+      },
+      "createdAt": "2026-10-26T10:02:53.891Z",
+      "updatedAt": "2026-10-26T10:02:53.891Z"
+    },
+    {
+      "id": "conv-1793008973430-rey2",
+      "title": "What is CerebroSync AI and who founded or develo...",
+      "messages": [
+        {
+          "id": "usr-1793008973430",
+          "sender": "user",
+          "text": "What is CerebroSync AI and who founded or developed it?",
+          "timestamp": "2026-10-26T10:02:53.430Z",
+          "actionType": "ask",
+          "scopeUsed": {
+            "type": "all"
+          }
+        },
+        {
+          "id": "msg-1793008973429",
+          "sender": "assistant",
+          "text": "Based on the retrieved evidence:\n\nAccording to the knowledge graph and retrieved sources, **Dr. Elena Vance** developed **CerebroSync AI** [Vance_CerebroSync_AI_Whitepaper.txt], and **CerebroSync AI** deployed on **NeuroPlex Bridge** [Vance_CerebroSync_AI_Whitepaper.txt], and **CerebroSync AI** treats **Refractory Parkinson's Disease** [Vance_CerebroSync_AI_Whitepaper.txt].\n\nSpecifically, Section 1: CerebroSync AI Architecture states: \"Dr. Elena Vance developed CerebroSync AI, an edge-computed deep reinforcement learning framework that interfaces directly with the NeuroPlex Bridge. CerebroSync AI processes multi-channel local field ...\" [Vance_CerebroSync_AI_Whitepaper.txt: Section 1: CerebroSync AI Architecture].\n",
+          "timestamp": "2026-10-26T10:02:53.429Z",
+          "actionType": "ask",
+          "ragResponse": {
+            "id": "query-1793008973429",
+            "question": "What is CerebroSync AI and who founded or developed it?",
+            "answer": "Based on the retrieved evidence:\n\nAccording to the knowledge graph and retrieved sources, **Dr. Elena Vance** developed **CerebroSync AI** [Vance_CerebroSync_AI_Whitepaper.txt], and **CerebroSync AI** deployed on **NeuroPlex Bridge** [Vance_CerebroSync_AI_Whitepaper.txt], and **CerebroSync AI** treats **Refractory Parkinson's Disease** [Vance_CerebroSync_AI_Whitepaper.txt].\n\nSpecifically, Section 1: CerebroSync AI Architecture states: \"Dr. Elena Vance developed CerebroSync AI, an edge-computed deep reinforcement learning framework that interfaces directly with the NeuroPlex Bridge. CerebroSync AI processes multi-channel local field ...\" [Vance_CerebroSync_AI_Whitepaper.txt: Section 1: CerebroSync AI Architecture].\n",
+            "citations": [
+              {
+                "documentId": "demo-doc-2",
+                "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+                "chunkId": "demo-c3",
+                "pageOrSection": "Section 1: CerebroSync AI Architecture",
+                "snippet": "Dr. Elena Vance developed CerebroSync AI, an edge-computed deep reinforcement learning framework that interfaces directly with the NeuroPlex Bridge. CerebroSync AI processes multi-...",
+                "relevanceScore": 0.626,
+                "isDemo": true
+              },
+              {
+                "documentId": "demo-doc-2",
+                "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+                "chunkId": "demo-c4",
+                "pageOrSection": "Section 2: Therapeutic Targets",
+                "snippet": "The primary therapeutic target of CerebroSync AI is Refractory Parkinson's Disease in patients who no longer respond effectively to levodopa therapy. In pre-clinical trials, Cerebr...",
+                "relevanceScore": 0.554,
+                "isDemo": true
+              },
+              {
+                "documentId": "demo-doc-3",
+                "documentName": "StJude_Clinical_Trial_Protocol_NCT09428.md",
+                "chunkId": "demo-c6",
+                "pageOrSection": "Section 2: Clinical Scope & FDA Designation",
+                "snippet": "Trial NCT-09428 evaluates the CerebroSync AI neuromodulation system embedded within the NeuroPlex Bridge for treating Refractory Parkinson's Disease. In October 2025, the U.S. FDA ...",
+                "relevanceScore": 0.501,
+                "isDemo": true
+              },
+              {
+                "documentId": "demo-doc-1",
+                "documentName": "ApexBio_Corporate_Overview.md",
+                "chunkId": "demo-c1",
+                "pageOrSection": "Section 1: Corporate Origins & Leadership",
+                "snippet": "ApexBio Dynamics is an advanced biotechnology and neuro-engineering company headquartered in Boston, Massachusetts. Founded in 2018 by bioengineer Dr. Arthur Pendelton, the company...",
+                "relevanceScore": 0.474,
+                "isDemo": true
+              }
+            ],
+            "graphPaths": [],
+            "retrievedChunks": [
+              {
+                "chunk": {
+                  "id": "demo-c3",
+                  "documentId": "demo-doc-2",
+                  "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+                  "pageOrSection": "Section 1: CerebroSync AI Architecture",
+                  "chunkIndex": 0,
+                  "text": "Dr. Elena Vance developed CerebroSync AI, an edge-computed deep reinforcement learning framework that interfaces directly with the NeuroPlex Bridge. CerebroSync AI processes multi-channel local field potentials from the subthalamic nucleus and predicts pathological oscillatory tremor synchronization 120ms before onset.",
+                  "entityIds": [
+                    "e-vance",
+                    "e-cerebrosync",
+                    "e-neuroplex"
+                  ],
+                  "isDemo": true
+                },
+                "score": 0.626
+              },
+              {
+                "chunk": {
+                  "id": "demo-c4",
+                  "documentId": "demo-doc-2",
+                  "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+                  "pageOrSection": "Section 2: Therapeutic Targets",
+                  "chunkIndex": 1,
+                  "text": "The primary therapeutic target of CerebroSync AI is Refractory Parkinson's Disease in patients who no longer respond effectively to levodopa therapy. In pre-clinical trials, CerebroSync AI demonstrated an 84% reduction in off-target involuntary movements.",
+                  "entityIds": [
+                    "e-cerebrosync",
+                    "e-parkinsons"
+                  ],
+                  "isDemo": true
+                },
+                "score": 0.554
+              },
+              {
+                "chunk": {
+                  "id": "demo-c6",
+                  "documentId": "demo-doc-3",
+                  "documentName": "StJude_Clinical_Trial_Protocol_NCT09428.md",
+                  "pageOrSection": "Section 2: Clinical Scope & FDA Designation",
+                  "chunkIndex": 1,
+                  "text": "Trial NCT-09428 evaluates the CerebroSync AI neuromodulation system embedded within the NeuroPlex Bridge for treating Refractory Parkinson's Disease. In October 2025, the U.S. FDA granted Breakthrough Device Designation to the integrated CerebroSync AI and NeuroPlex system.",
+                  "entityIds": [
+                    "e-nct09428",
+                    "e-cerebrosync",
+                    "e-neuroplex",
+                    "e-parkinsons",
+                    "e-fda"
+                  ],
+                  "isDemo": true
+                },
+                "score": 0.501
+              },
+              {
+                "chunk": {
+                  "id": "demo-c1",
+                  "documentId": "demo-doc-1",
+                  "documentName": "ApexBio_Corporate_Overview.md",
+                  "pageOrSection": "Section 1: Corporate Origins & Leadership",
+                  "chunkIndex": 0,
+                  "text": "ApexBio Dynamics is an advanced biotechnology and neuro-engineering company headquartered in Boston, Massachusetts. Founded in 2018 by bioengineer Dr. Arthur Pendelton, the company recruited Dr. Elena Vance in November 2021 as Chief AI Neuroscientist to lead the Autonomous Neural Systems Division.",
+                  "entityIds": [
+                    "e-apexbio",
+                    "e-vance",
+                    "e-boston",
+                    "e-pendelton"
+                  ],
+                  "isDemo": true
+                },
+                "score": 0.474
+              }
+            ],
+            "matchedEntities": [
+              {
+                "id": "e-cerebrosync",
+                "name": "CerebroSync AI",
+                "type": "Product",
+                "description": "Closed-loop deep reinforcement learning algorithm for adaptive tremor modulation.",
+                "mentionCount": 4,
+                "chunkIds": [
+                  "demo-c3",
+                  "demo-c4",
+                  "demo-c6"
+                ],
+                "isDemo": true
+              }
+            ],
+            "traversedRelationships": [
+              {
+                "id": "rel-6",
+                "sourceEntityId": "e-vance",
+                "targetEntityId": "e-cerebrosync",
+                "sourceEntityName": "Dr. Elena Vance",
+                "targetEntityName": "CerebroSync AI",
+                "type": "DEVELOPED",
+                "description": "Dr. Elena Vance developed CerebroSync AI reinforcement learning model.",
+                "sourceChunkId": "demo-c3",
+                "documentId": "demo-doc-2",
+                "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+                "snippet": "Dr. Elena Vance developed CerebroSync AI, an edge-computed deep reinforcement learning framework...",
+                "isDemo": true
+              },
+              {
+                "id": "rel-7",
+                "sourceEntityId": "e-cerebrosync",
+                "targetEntityId": "e-neuroplex",
+                "sourceEntityName": "CerebroSync AI",
+                "targetEntityName": "NeuroPlex Bridge",
+                "type": "DEPLOYED_ON",
+                "description": "CerebroSync AI runs on and interfaces directly with the NeuroPlex Bridge implant.",
+                "sourceChunkId": "demo-c3",
+                "documentId": "demo-doc-2",
+                "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+                "snippet": "...interfaces directly with the NeuroPlex Bridge.",
+                "isDemo": true
+              },
+              {
+                "id": "rel-8",
+                "sourceEntityId": "e-cerebrosync",
+                "targetEntityId": "e-parkinsons",
+                "sourceEntityName": "CerebroSync AI",
+                "targetEntityName": "Refractory Parkinson's Disease",
+                "type": "TREATS",
+                "description": "CerebroSync AI targets suppression of tremors in Refractory Parkinson's.",
+                "sourceChunkId": "demo-c4",
+                "documentId": "demo-doc-2",
+                "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+                "snippet": "The primary therapeutic target of CerebroSync AI is Refractory Parkinson's Disease in patients who no longer respond effectively to levodopa therapy.",
+                "isDemo": true
+              },
+              {
+                "id": "rel-11",
+                "sourceEntityId": "e-nct09428",
+                "targetEntityId": "e-cerebrosync",
+                "sourceEntityName": "Trial NCT-09428",
+                "targetEntityName": "CerebroSync AI",
+                "type": "EVALUATES",
+                "description": "Trial NCT-09428 evaluates the clinical efficacy of CerebroSync AI in human subjects.",
+                "sourceChunkId": "demo-c6",
+                "documentId": "demo-doc-3",
+                "documentName": "StJude_Clinical_Trial_Protocol_NCT09428.md",
+                "snippet": "Trial NCT-09428 evaluates the CerebroSync AI neuromodulation system embedded within the NeuroPlex Bridge...",
+                "isDemo": true
+              },
+              {
+                "id": "rel-12",
+                "sourceEntityId": "e-fda",
+                "targetEntityId": "e-cerebrosync",
+                "sourceEntityName": "U.S. FDA",
+                "targetEntityName": "CerebroSync AI",
+                "type": "GRANTED_DESIGNATION",
+                "description": "FDA granted Breakthrough Device Designation to the integrated CerebroSync AI system.",
+                "sourceChunkId": "demo-c6",
+                "documentId": "demo-doc-3",
+                "documentName": "StJude_Clinical_Trial_Protocol_NCT09428.md",
+                "snippet": "In October 2025, the U.S. FDA granted Breakthrough Device Designation to the integrated CerebroSync AI and NeuroPlex system.",
+                "isDemo": true
+              },
+              {
+                "id": "rel-3",
+                "sourceEntityId": "e-vance",
+                "targetEntityId": "e-apexbio",
+                "sourceEntityName": "Dr. Elena Vance",
+                "targetEntityName": "ApexBio Dynamics",
+                "type": "EMPLOYED_BY",
+                "description": "Dr. Elena Vance serves as Chief AI Neuroscientist leading Autonomous Neural Systems.",
+                "sourceChunkId": "demo-c1",
+                "documentId": "demo-doc-1",
+                "documentName": "ApexBio_Corporate_Overview.md",
+                "snippet": "...recruited Dr. Elena Vance in November 2021 as Chief AI Neuroscientist to lead the Autonomous Neural Systems Division.",
+                "isDemo": true
+              },
+              {
+                "id": "rel-4",
+                "sourceEntityId": "e-apexbio",
+                "targetEntityId": "e-neuroplex",
+                "sourceEntityName": "ApexBio Dynamics",
+                "targetEntityName": "NeuroPlex Bridge",
+                "type": "MANUFACTURES",
+                "description": "NeuroPlex Bridge is the proprietary hardware flagship developed by ApexBio.",
+                "sourceChunkId": "demo-c2",
+                "documentId": "demo-doc-1",
+                "documentName": "ApexBio_Corporate_Overview.md",
+                "snippet": "ApexBio's hardware flagship is the NeuroPlex Bridge, a high-density micro-electrode array implant...",
+                "isDemo": true
+              },
+              {
+                "id": "rel-10",
+                "sourceEntityId": "e-thorne",
+                "targetEntityId": "e-nct09428",
+                "sourceEntityName": "Dr. Marcus Thorne",
+                "targetEntityName": "Trial NCT-09428",
+                "type": "DIRECTS",
+                "description": "Dr. Marcus Thorne serves as Principal Investigator for Trial NCT-09428.",
+                "sourceChunkId": "demo-c5",
+                "documentId": "demo-doc-3",
+                "documentName": "StJude_Clinical_Trial_Protocol_NCT09428.md",
+                "snippet": "Dr. Marcus Thorne... serves as Principal Investigator, supervising surgical implantation and patient telemetry.",
+                "isDemo": true
+              }
+            ],
+            "confidence": "high",
+            "processingTimeMs": 4429,
+            "timestamp": "2026-10-26T10:02:53.429Z",
+            "modelUsed": "gemini-3.8-flash",
+            "evidenceSufficient": true,
+            "retrievalMode": "hybrid"
+          },
+          "suggestedQuestions": [
+            "What evidence connects Dr. Elena Vance to CerebroSync AI?",
+            "How does CerebroSync AI relate to DEPLOYED_ON?"
+          ],
+          "scopeUsed": {
+            "type": "all"
+          }
+        }
+      ],
+      "scope": {
+        "type": "all"
+      },
+      "createdAt": "2026-10-26T10:02:53.430Z",
+      "updatedAt": "2026-10-26T10:02:53.430Z"
+    },
+    {
+      "id": "conv-1793008937998-9l0x",
+      "title": "What is CerebroSync AI and who founded it?",
+      "messages": [
+        {
+          "id": "usr-1793008937998",
+          "sender": "user",
+          "text": "What is CerebroSync AI and who founded it?",
+          "timestamp": "2026-10-26T10:02:17.998Z",
+          "scopeUsed": {
+            "type": "all"
+          }
+        },
+        {
+          "id": "msg-1793008937998",
+          "sender": "assistant",
+          "text": "Based on the retrieved evidence:\n\nAccording to the knowledge graph and retrieved sources, **Dr. Elena Vance** developed **CerebroSync AI** [Vance_CerebroSync_AI_Whitepaper.txt], and **CerebroSync AI** deployed on **NeuroPlex Bridge** [Vance_CerebroSync_AI_Whitepaper.txt], and **CerebroSync AI** treats **Refractory Parkinson's Disease** [Vance_CerebroSync_AI_Whitepaper.txt].\n\nSpecifically, Section 2: Therapeutic Targets states: \"The primary therapeutic target of CerebroSync AI is Refractory Parkinson's Disease in patients who no longer respond effectively to levodopa therapy. In pre-clinical trials, CerebroSync AI demonstrate...\" [Vance_CerebroSync_AI_Whitepaper.txt: Section 2: Therapeutic Targets].\n",
+          "timestamp": "2026-10-26T10:02:17.998Z",
+          "actionType": "ask",
+          "ragResponse": {
+            "id": "query-1793008937998",
+            "question": "What is CerebroSync AI and who founded it?",
+            "answer": "Based on the retrieved evidence:\n\nAccording to the knowledge graph and retrieved sources, **Dr. Elena Vance** developed **CerebroSync AI** [Vance_CerebroSync_AI_Whitepaper.txt], and **CerebroSync AI** deployed on **NeuroPlex Bridge** [Vance_CerebroSync_AI_Whitepaper.txt], and **CerebroSync AI** treats **Refractory Parkinson's Disease** [Vance_CerebroSync_AI_Whitepaper.txt].\n\nSpecifically, Section 2: Therapeutic Targets states: \"The primary therapeutic target of CerebroSync AI is Refractory Parkinson's Disease in patients who no longer respond effectively to levodopa therapy. In pre-clinical trials, CerebroSync AI demonstrate...\" [Vance_CerebroSync_AI_Whitepaper.txt: Section 2: Therapeutic Targets].\n",
+            "citations": [
+              {
+                "documentId": "demo-doc-2",
+                "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+                "chunkId": "demo-c4",
+                "pageOrSection": "Section 2: Therapeutic Targets",
+                "snippet": "The primary therapeutic target of CerebroSync AI is Refractory Parkinson's Disease in patients who no longer respond effectively to levodopa therapy. In pre-clinical trials, Cerebr...",
+                "relevanceScore": 0.6,
+                "isDemo": true
+              },
+              {
+                "documentId": "demo-doc-2",
+                "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+                "chunkId": "demo-c3",
+                "pageOrSection": "Section 1: CerebroSync AI Architecture",
+                "snippet": "Dr. Elena Vance developed CerebroSync AI, an edge-computed deep reinforcement learning framework that interfaces directly with the NeuroPlex Bridge. CerebroSync AI processes multi-...",
+                "relevanceScore": 0.558,
+                "isDemo": true
+              },
+              {
+                "documentId": "demo-doc-3",
+                "documentName": "StJude_Clinical_Trial_Protocol_NCT09428.md",
+                "chunkId": "demo-c6",
+                "pageOrSection": "Section 2: Clinical Scope & FDA Designation",
+                "snippet": "Trial NCT-09428 evaluates the CerebroSync AI neuromodulation system embedded within the NeuroPlex Bridge for treating Refractory Parkinson's Disease. In October 2025, the U.S. FDA ...",
+                "relevanceScore": 0.54,
+                "isDemo": true
+              },
+              {
+                "documentId": "demo-doc-1",
+                "documentName": "ApexBio_Corporate_Overview.md",
+                "chunkId": "demo-c1",
+                "pageOrSection": "Section 1: Corporate Origins & Leadership",
+                "snippet": "ApexBio Dynamics is an advanced biotechnology and neuro-engineering company headquartered in Boston, Massachusetts. Founded in 2018 by bioengineer Dr. Arthur Pendelton, the company...",
+                "relevanceScore": 0.51,
+                "isDemo": true
+              }
+            ],
+            "graphPaths": [],
+            "retrievedChunks": [
+              {
+                "chunk": {
+                  "id": "demo-c4",
+                  "documentId": "demo-doc-2",
+                  "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+                  "pageOrSection": "Section 2: Therapeutic Targets",
+                  "chunkIndex": 1,
+                  "text": "The primary therapeutic target of CerebroSync AI is Refractory Parkinson's Disease in patients who no longer respond effectively to levodopa therapy. In pre-clinical trials, CerebroSync AI demonstrated an 84% reduction in off-target involuntary movements.",
+                  "entityIds": [
+                    "e-cerebrosync",
+                    "e-parkinsons"
+                  ],
+                  "isDemo": true
+                },
+                "score": 0.6
+              },
+              {
+                "chunk": {
+                  "id": "demo-c3",
+                  "documentId": "demo-doc-2",
+                  "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+                  "pageOrSection": "Section 1: CerebroSync AI Architecture",
+                  "chunkIndex": 0,
+                  "text": "Dr. Elena Vance developed CerebroSync AI, an edge-computed deep reinforcement learning framework that interfaces directly with the NeuroPlex Bridge. CerebroSync AI processes multi-channel local field potentials from the subthalamic nucleus and predicts pathological oscillatory tremor synchronization 120ms before onset.",
+                  "entityIds": [
+                    "e-vance",
+                    "e-cerebrosync",
+                    "e-neuroplex"
+                  ],
+                  "isDemo": true
+                },
+                "score": 0.558
+              },
+              {
+                "chunk": {
+                  "id": "demo-c6",
+                  "documentId": "demo-doc-3",
+                  "documentName": "StJude_Clinical_Trial_Protocol_NCT09428.md",
+                  "pageOrSection": "Section 2: Clinical Scope & FDA Designation",
+                  "chunkIndex": 1,
+                  "text": "Trial NCT-09428 evaluates the CerebroSync AI neuromodulation system embedded within the NeuroPlex Bridge for treating Refractory Parkinson's Disease. In October 2025, the U.S. FDA granted Breakthrough Device Designation to the integrated CerebroSync AI and NeuroPlex system.",
+                  "entityIds": [
+                    "e-nct09428",
+                    "e-cerebrosync",
+                    "e-neuroplex",
+                    "e-parkinsons",
+                    "e-fda"
+                  ],
+                  "isDemo": true
+                },
+                "score": 0.54
+              },
+              {
+                "chunk": {
+                  "id": "demo-c1",
+                  "documentId": "demo-doc-1",
+                  "documentName": "ApexBio_Corporate_Overview.md",
+                  "pageOrSection": "Section 1: Corporate Origins & Leadership",
+                  "chunkIndex": 0,
+                  "text": "ApexBio Dynamics is an advanced biotechnology and neuro-engineering company headquartered in Boston, Massachusetts. Founded in 2018 by bioengineer Dr. Arthur Pendelton, the company recruited Dr. Elena Vance in November 2021 as Chief AI Neuroscientist to lead the Autonomous Neural Systems Division.",
+                  "entityIds": [
+                    "e-apexbio",
+                    "e-vance",
+                    "e-boston",
+                    "e-pendelton"
+                  ],
+                  "isDemo": true
+                },
+                "score": 0.51
+              }
+            ],
+            "matchedEntities": [
+              {
+                "id": "e-cerebrosync",
+                "name": "CerebroSync AI",
+                "type": "Product",
+                "description": "Closed-loop deep reinforcement learning algorithm for adaptive tremor modulation.",
+                "mentionCount": 4,
+                "chunkIds": [
+                  "demo-c3",
+                  "demo-c4",
+                  "demo-c6"
+                ],
+                "isDemo": true
+              }
+            ],
+            "traversedRelationships": [
+              {
+                "id": "rel-6",
+                "sourceEntityId": "e-vance",
+                "targetEntityId": "e-cerebrosync",
+                "sourceEntityName": "Dr. Elena Vance",
+                "targetEntityName": "CerebroSync AI",
+                "type": "DEVELOPED",
+                "description": "Dr. Elena Vance developed CerebroSync AI reinforcement learning model.",
+                "sourceChunkId": "demo-c3",
+                "documentId": "demo-doc-2",
+                "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+                "snippet": "Dr. Elena Vance developed CerebroSync AI, an edge-computed deep reinforcement learning framework...",
+                "isDemo": true
+              },
+              {
+                "id": "rel-7",
+                "sourceEntityId": "e-cerebrosync",
+                "targetEntityId": "e-neuroplex",
+                "sourceEntityName": "CerebroSync AI",
+                "targetEntityName": "NeuroPlex Bridge",
+                "type": "DEPLOYED_ON",
+                "description": "CerebroSync AI runs on and interfaces directly with the NeuroPlex Bridge implant.",
+                "sourceChunkId": "demo-c3",
+                "documentId": "demo-doc-2",
+                "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+                "snippet": "...interfaces directly with the NeuroPlex Bridge.",
+                "isDemo": true
+              },
+              {
+                "id": "rel-8",
+                "sourceEntityId": "e-cerebrosync",
+                "targetEntityId": "e-parkinsons",
+                "sourceEntityName": "CerebroSync AI",
+                "targetEntityName": "Refractory Parkinson's Disease",
+                "type": "TREATS",
+                "description": "CerebroSync AI targets suppression of tremors in Refractory Parkinson's.",
+                "sourceChunkId": "demo-c4",
+                "documentId": "demo-doc-2",
+                "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+                "snippet": "The primary therapeutic target of CerebroSync AI is Refractory Parkinson's Disease in patients who no longer respond effectively to levodopa therapy.",
+                "isDemo": true
+              },
+              {
+                "id": "rel-11",
+                "sourceEntityId": "e-nct09428",
+                "targetEntityId": "e-cerebrosync",
+                "sourceEntityName": "Trial NCT-09428",
+                "targetEntityName": "CerebroSync AI",
+                "type": "EVALUATES",
+                "description": "Trial NCT-09428 evaluates the clinical efficacy of CerebroSync AI in human subjects.",
+                "sourceChunkId": "demo-c6",
+                "documentId": "demo-doc-3",
+                "documentName": "StJude_Clinical_Trial_Protocol_NCT09428.md",
+                "snippet": "Trial NCT-09428 evaluates the CerebroSync AI neuromodulation system embedded within the NeuroPlex Bridge...",
+                "isDemo": true
+              },
+              {
+                "id": "rel-12",
+                "sourceEntityId": "e-fda",
+                "targetEntityId": "e-cerebrosync",
+                "sourceEntityName": "U.S. FDA",
+                "targetEntityName": "CerebroSync AI",
+                "type": "GRANTED_DESIGNATION",
+                "description": "FDA granted Breakthrough Device Designation to the integrated CerebroSync AI system.",
+                "sourceChunkId": "demo-c6",
+                "documentId": "demo-doc-3",
+                "documentName": "StJude_Clinical_Trial_Protocol_NCT09428.md",
+                "snippet": "In October 2025, the U.S. FDA granted Breakthrough Device Designation to the integrated CerebroSync AI and NeuroPlex system.",
+                "isDemo": true
+              },
+              {
+                "id": "rel-3",
+                "sourceEntityId": "e-vance",
+                "targetEntityId": "e-apexbio",
+                "sourceEntityName": "Dr. Elena Vance",
+                "targetEntityName": "ApexBio Dynamics",
+                "type": "EMPLOYED_BY",
+                "description": "Dr. Elena Vance serves as Chief AI Neuroscientist leading Autonomous Neural Systems.",
+                "sourceChunkId": "demo-c1",
+                "documentId": "demo-doc-1",
+                "documentName": "ApexBio_Corporate_Overview.md",
+                "snippet": "...recruited Dr. Elena Vance in November 2021 as Chief AI Neuroscientist to lead the Autonomous Neural Systems Division.",
+                "isDemo": true
+              },
+              {
+                "id": "rel-4",
+                "sourceEntityId": "e-apexbio",
+                "targetEntityId": "e-neuroplex",
+                "sourceEntityName": "ApexBio Dynamics",
+                "targetEntityName": "NeuroPlex Bridge",
+                "type": "MANUFACTURES",
+                "description": "NeuroPlex Bridge is the proprietary hardware flagship developed by ApexBio.",
+                "sourceChunkId": "demo-c2",
+                "documentId": "demo-doc-1",
+                "documentName": "ApexBio_Corporate_Overview.md",
+                "snippet": "ApexBio's hardware flagship is the NeuroPlex Bridge, a high-density micro-electrode array implant...",
+                "isDemo": true
+              },
+              {
+                "id": "rel-10",
+                "sourceEntityId": "e-thorne",
+                "targetEntityId": "e-nct09428",
+                "sourceEntityName": "Dr. Marcus Thorne",
+                "targetEntityName": "Trial NCT-09428",
+                "type": "DIRECTS",
+                "description": "Dr. Marcus Thorne serves as Principal Investigator for Trial NCT-09428.",
+                "sourceChunkId": "demo-c5",
+                "documentId": "demo-doc-3",
+                "documentName": "StJude_Clinical_Trial_Protocol_NCT09428.md",
+                "snippet": "Dr. Marcus Thorne... serves as Principal Investigator, supervising surgical implantation and patient telemetry.",
+                "isDemo": true
+              }
+            ],
+            "confidence": "high",
+            "processingTimeMs": 4535,
+            "timestamp": "2026-10-26T10:02:17.998Z",
+            "modelUsed": "gemini-3.8-flash",
+            "evidenceSufficient": true,
+            "retrievalMode": "hybrid"
+          },
+          "suggestedQuestions": [
+            "What evidence connects Dr. Elena Vance to CerebroSync AI?",
+            "How does CerebroSync AI relate to DEPLOYED_ON?"
+          ],
+          "scopeUsed": {
+            "type": "all"
+          }
+        }
+      ],
+      "scope": {
+        "type": "all"
+      },
+      "createdAt": "2026-10-26T10:02:17.998Z",
+      "updatedAt": "2026-10-26T10:02:17.998Z"
+    },
+    {
+      "id": "conv-1793008928831-pj2u",
+      "title": "What is CerebroSync AI and who founded it?",
+      "messages": [
+        {
+          "id": "usr-1793008928831",
+          "sender": "user",
+          "text": "What is CerebroSync AI and who founded it?",
+          "timestamp": "2026-10-26T10:02:08.831Z",
+          "scopeUsed": {
+            "type": "all"
+          }
+        },
+        {
+          "id": "msg-1793008928831",
+          "sender": "assistant",
+          "text": "Based on the retrieved evidence:\n\nAccording to the knowledge graph and retrieved sources, **Dr. Elena Vance** developed **CerebroSync AI** [Vance_CerebroSync_AI_Whitepaper.txt], and **CerebroSync AI** deployed on **NeuroPlex Bridge** [Vance_CerebroSync_AI_Whitepaper.txt], and **CerebroSync AI** treats **Refractory Parkinson's Disease** [Vance_CerebroSync_AI_Whitepaper.txt].\n\nSpecifically, Section 2: Therapeutic Targets states: \"The primary therapeutic target of CerebroSync AI is Refractory Parkinson's Disease in patients who no longer respond effectively to levodopa therapy. In pre-clinical trials, CerebroSync AI demonstrate...\" [Vance_CerebroSync_AI_Whitepaper.txt: Section 2: Therapeutic Targets].\n",
+          "timestamp": "2026-10-26T10:02:08.831Z",
+          "actionType": "ask",
+          "ragResponse": {
+            "id": "query-1793008928831",
+            "question": "What is CerebroSync AI and who founded it?",
+            "answer": "Based on the retrieved evidence:\n\nAccording to the knowledge graph and retrieved sources, **Dr. Elena Vance** developed **CerebroSync AI** [Vance_CerebroSync_AI_Whitepaper.txt], and **CerebroSync AI** deployed on **NeuroPlex Bridge** [Vance_CerebroSync_AI_Whitepaper.txt], and **CerebroSync AI** treats **Refractory Parkinson's Disease** [Vance_CerebroSync_AI_Whitepaper.txt].\n\nSpecifically, Section 2: Therapeutic Targets states: \"The primary therapeutic target of CerebroSync AI is Refractory Parkinson's Disease in patients who no longer respond effectively to levodopa therapy. In pre-clinical trials, CerebroSync AI demonstrate...\" [Vance_CerebroSync_AI_Whitepaper.txt: Section 2: Therapeutic Targets].\n",
+            "citations": [
+              {
+                "documentId": "demo-doc-2",
+                "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+                "chunkId": "demo-c4",
+                "pageOrSection": "Section 2: Therapeutic Targets",
+                "snippet": "The primary therapeutic target of CerebroSync AI is Refractory Parkinson's Disease in patients who no longer respond effectively to levodopa therapy. In pre-clinical trials, Cerebr...",
+                "relevanceScore": 0.6,
+                "isDemo": true
+              },
+              {
+                "documentId": "demo-doc-2",
+                "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+                "chunkId": "demo-c3",
+                "pageOrSection": "Section 1: CerebroSync AI Architecture",
+                "snippet": "Dr. Elena Vance developed CerebroSync AI, an edge-computed deep reinforcement learning framework that interfaces directly with the NeuroPlex Bridge. CerebroSync AI processes multi-...",
+                "relevanceScore": 0.558,
+                "isDemo": true
+              },
+              {
+                "documentId": "demo-doc-3",
+                "documentName": "StJude_Clinical_Trial_Protocol_NCT09428.md",
+                "chunkId": "demo-c6",
+                "pageOrSection": "Section 2: Clinical Scope & FDA Designation",
+                "snippet": "Trial NCT-09428 evaluates the CerebroSync AI neuromodulation system embedded within the NeuroPlex Bridge for treating Refractory Parkinson's Disease. In October 2025, the U.S. FDA ...",
+                "relevanceScore": 0.54,
+                "isDemo": true
+              },
+              {
+                "documentId": "demo-doc-1",
+                "documentName": "ApexBio_Corporate_Overview.md",
+                "chunkId": "demo-c1",
+                "pageOrSection": "Section 1: Corporate Origins & Leadership",
+                "snippet": "ApexBio Dynamics is an advanced biotechnology and neuro-engineering company headquartered in Boston, Massachusetts. Founded in 2018 by bioengineer Dr. Arthur Pendelton, the company...",
+                "relevanceScore": 0.51,
+                "isDemo": true
+              }
+            ],
+            "graphPaths": [],
+            "retrievedChunks": [
+              {
+                "chunk": {
+                  "id": "demo-c4",
+                  "documentId": "demo-doc-2",
+                  "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+                  "pageOrSection": "Section 2: Therapeutic Targets",
+                  "chunkIndex": 1,
+                  "text": "The primary therapeutic target of CerebroSync AI is Refractory Parkinson's Disease in patients who no longer respond effectively to levodopa therapy. In pre-clinical trials, CerebroSync AI demonstrated an 84% reduction in off-target involuntary movements.",
+                  "entityIds": [
+                    "e-cerebrosync",
+                    "e-parkinsons"
+                  ],
+                  "isDemo": true
+                },
+                "score": 0.6
+              },
+              {
+                "chunk": {
+                  "id": "demo-c3",
+                  "documentId": "demo-doc-2",
+                  "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+                  "pageOrSection": "Section 1: CerebroSync AI Architecture",
+                  "chunkIndex": 0,
+                  "text": "Dr. Elena Vance developed CerebroSync AI, an edge-computed deep reinforcement learning framework that interfaces directly with the NeuroPlex Bridge. CerebroSync AI processes multi-channel local field potentials from the subthalamic nucleus and predicts pathological oscillatory tremor synchronization 120ms before onset.",
+                  "entityIds": [
+                    "e-vance",
+                    "e-cerebrosync",
+                    "e-neuroplex"
+                  ],
+                  "isDemo": true
+                },
+                "score": 0.558
+              },
+              {
+                "chunk": {
+                  "id": "demo-c6",
+                  "documentId": "demo-doc-3",
+                  "documentName": "StJude_Clinical_Trial_Protocol_NCT09428.md",
+                  "pageOrSection": "Section 2: Clinical Scope & FDA Designation",
+                  "chunkIndex": 1,
+                  "text": "Trial NCT-09428 evaluates the CerebroSync AI neuromodulation system embedded within the NeuroPlex Bridge for treating Refractory Parkinson's Disease. In October 2025, the U.S. FDA granted Breakthrough Device Designation to the integrated CerebroSync AI and NeuroPlex system.",
+                  "entityIds": [
+                    "e-nct09428",
+                    "e-cerebrosync",
+                    "e-neuroplex",
+                    "e-parkinsons",
+                    "e-fda"
+                  ],
+                  "isDemo": true
+                },
+                "score": 0.54
+              },
+              {
+                "chunk": {
+                  "id": "demo-c1",
+                  "documentId": "demo-doc-1",
+                  "documentName": "ApexBio_Corporate_Overview.md",
+                  "pageOrSection": "Section 1: Corporate Origins & Leadership",
+                  "chunkIndex": 0,
+                  "text": "ApexBio Dynamics is an advanced biotechnology and neuro-engineering company headquartered in Boston, Massachusetts. Founded in 2018 by bioengineer Dr. Arthur Pendelton, the company recruited Dr. Elena Vance in November 2021 as Chief AI Neuroscientist to lead the Autonomous Neural Systems Division.",
+                  "entityIds": [
+                    "e-apexbio",
+                    "e-vance",
+                    "e-boston",
+                    "e-pendelton"
+                  ],
+                  "isDemo": true
+                },
+                "score": 0.51
+              }
+            ],
+            "matchedEntities": [
+              {
+                "id": "e-cerebrosync",
+                "name": "CerebroSync AI",
+                "type": "Product",
+                "description": "Closed-loop deep reinforcement learning algorithm for adaptive tremor modulation.",
+                "mentionCount": 4,
+                "chunkIds": [
+                  "demo-c3",
+                  "demo-c4",
+                  "demo-c6"
+                ],
+                "isDemo": true
+              }
+            ],
+            "traversedRelationships": [
+              {
+                "id": "rel-6",
+                "sourceEntityId": "e-vance",
+                "targetEntityId": "e-cerebrosync",
+                "sourceEntityName": "Dr. Elena Vance",
+                "targetEntityName": "CerebroSync AI",
+                "type": "DEVELOPED",
+                "description": "Dr. Elena Vance developed CerebroSync AI reinforcement learning model.",
+                "sourceChunkId": "demo-c3",
+                "documentId": "demo-doc-2",
+                "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+                "snippet": "Dr. Elena Vance developed CerebroSync AI, an edge-computed deep reinforcement learning framework...",
+                "isDemo": true
+              },
+              {
+                "id": "rel-7",
+                "sourceEntityId": "e-cerebrosync",
+                "targetEntityId": "e-neuroplex",
+                "sourceEntityName": "CerebroSync AI",
+                "targetEntityName": "NeuroPlex Bridge",
+                "type": "DEPLOYED_ON",
+                "description": "CerebroSync AI runs on and interfaces directly with the NeuroPlex Bridge implant.",
+                "sourceChunkId": "demo-c3",
+                "documentId": "demo-doc-2",
+                "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+                "snippet": "...interfaces directly with the NeuroPlex Bridge.",
+                "isDemo": true
+              },
+              {
+                "id": "rel-8",
+                "sourceEntityId": "e-cerebrosync",
+                "targetEntityId": "e-parkinsons",
+                "sourceEntityName": "CerebroSync AI",
+                "targetEntityName": "Refractory Parkinson's Disease",
+                "type": "TREATS",
+                "description": "CerebroSync AI targets suppression of tremors in Refractory Parkinson's.",
+                "sourceChunkId": "demo-c4",
+                "documentId": "demo-doc-2",
+                "documentName": "Vance_CerebroSync_AI_Whitepaper.txt",
+                "snippet": "The primary therapeutic target of CerebroSync AI is Refractory Parkinson's Disease in patients who no longer respond effectively to levodopa therapy.",
+                "isDemo": true
+              },
+              {
+                "id": "rel-11",
+                "sourceEntityId": "e-nct09428",
+                "targetEntityId": "e-cerebrosync",
+                "sourceEntityName": "Trial NCT-09428",
+                "targetEntityName": "CerebroSync AI",
+                "type": "EVALUATES",
+                "description": "Trial NCT-09428 evaluates the clinical efficacy of CerebroSync AI in human subjects.",
+                "sourceChunkId": "demo-c6",
+                "documentId": "demo-doc-3",
+                "documentName": "StJude_Clinical_Trial_Protocol_NCT09428.md",
+                "snippet": "Trial NCT-09428 evaluates the CerebroSync AI neuromodulation system embedded within the NeuroPlex Bridge...",
+                "isDemo": true
+              },
+              {
+                "id": "rel-12",
+                "sourceEntityId": "e-fda",
+                "targetEntityId": "e-cerebrosync",
+                "sourceEntityName": "U.S. FDA",
+                "targetEntityName": "CerebroSync AI",
+                "type": "GRANTED_DESIGNATION",
+                "description": "FDA granted Breakthrough Device Designation to the integrated CerebroSync AI system.",
+                "sourceChunkId": "demo-c6",
+                "documentId": "demo-doc-3",
+                "documentName": "StJude_Clinical_Trial_Protocol_NCT09428.md",
+                "snippet": "In October 2025, the U.S. FDA granted Breakthrough Device Designation to the integrated CerebroSync AI and NeuroPlex system.",
+                "isDemo": true
+              },
+              {
+                "id": "rel-3",
+                "sourceEntityId": "e-vance",
+                "targetEntityId": "e-apexbio",
+                "sourceEntityName": "Dr. Elena Vance",
+                "targetEntityName": "ApexBio Dynamics",
+                "type": "EMPLOYED_BY",
+                "description": "Dr. Elena Vance serves as Chief AI Neuroscientist leading Autonomous Neural Systems.",
+                "sourceChunkId": "demo-c1",
+                "documentId": "demo-doc-1",
+                "documentName": "ApexBio_Corporate_Overview.md",
+                "snippet": "...recruited Dr. Elena Vance in November 2021 as Chief AI Neuroscientist to lead the Autonomous Neural Systems Division.",
+                "isDemo": true
+              },
+              {
+                "id": "rel-4",
+                "sourceEntityId": "e-apexbio",
+                "targetEntityId": "e-neuroplex",
+                "sourceEntityName": "ApexBio Dynamics",
+                "targetEntityName": "NeuroPlex Bridge",
+                "type": "MANUFACTURES",
+                "description": "NeuroPlex Bridge is the proprietary hardware flagship developed by ApexBio.",
+                "sourceChunkId": "demo-c2",
+                "documentId": "demo-doc-1",
+                "documentName": "ApexBio_Corporate_Overview.md",
+                "snippet": "ApexBio's hardware flagship is the NeuroPlex Bridge, a high-density micro-electrode array implant...",
+                "isDemo": true
+              },
+              {
+                "id": "rel-10",
+                "sourceEntityId": "e-thorne",
+                "targetEntityId": "e-nct09428",
+                "sourceEntityName": "Dr. Marcus Thorne",
+                "targetEntityName": "Trial NCT-09428",
+                "type": "DIRECTS",
+                "description": "Dr. Marcus Thorne serves as Principal Investigator for Trial NCT-09428.",
+                "sourceChunkId": "demo-c5",
+                "documentId": "demo-doc-3",
+                "documentName": "StJude_Clinical_Trial_Protocol_NCT09428.md",
+                "snippet": "Dr. Marcus Thorne... serves as Principal Investigator, supervising surgical implantation and patient telemetry.",
+                "isDemo": true
+              }
+            ],
+            "confidence": "high",
+            "processingTimeMs": 1638,
+            "timestamp": "2026-10-26T10:02:08.831Z",
+            "modelUsed": "gemini-3.8-flash",
+            "evidenceSufficient": true,
+            "retrievalMode": "hybrid"
+          },
+          "suggestedQuestions": [
+            "What evidence connects Dr. Elena Vance to CerebroSync AI?",
+            "How does CerebroSync AI relate to DEPLOYED_ON?"
+          ],
+          "scopeUsed": {
+            "type": "all"
+          }
+        }
+      ],
+      "scope": {
+        "type": "all"
+      },
+      "createdAt": "2026-10-26T10:02:08.831Z",
+      "updatedAt": "2026-10-26T10:02:08.831Z"
+    }
+  ]
+}
